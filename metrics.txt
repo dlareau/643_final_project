@@ -1,0 +1,9 @@
+Evaulation metrics:
+  Speed
+    Compare against board proccessor
+    Compare against lab machines
+    Scale design on board to max board size, make similar computation on computer.
+    
+  Low Priority:
+    Size (see above)
+    Power
