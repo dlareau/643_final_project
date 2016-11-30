@@ -1,40 +1,21 @@
 module top(
-    input  logic        clk, reset, start, 
-    output logic [31:0] addr_in,        
-    output logic        clk_in,
-    output logic [31:0] din_in, 
-    input  logic [31:0] dout_in,
-    output logic        we_in, en_in, rst_in,
-    output logic [31:0] addr_out,        
-    output logic        clk_out,
-    output logic [31:0] din_out, 
-    input  logic [31:0] dout_out,
-    output logic        we_out, en_out, rst_out
+    input  logic        clk, reset, start,
+    input  logic        valid_in,
+    output logic        valid_out,
+    input  logic [31:0] data_in, 
+    output logic [31:0] data_out
 );
 
     logic [8:0][8:0][8:0] input_vector; // Could just load the solver register
     logic [8:0][8:0][3:0] output_vector;
    
     logic reset_L;
+    logic [6:0] addr_in_INPUT, addr_out_INPUT, addr_in_OUTPUT, addr_out_OUTPUT;
+    logic       addr_en_INPUT, addr_en_OUTPUT, puzzle_go, puzzle_done; 
     
-    assign reset_L = ~reset;
-    
-    // BRAM interconnect logic
-    assign clk_in = clk;
-    assign clk_out = clk;
-    assign we_in = 0;
-    //assign we_out = ; // For transferring to output BRAM
-    assign rst_in = reset;
-    assign rst_out = reset;
-    assign en_in = 1;
-    assign en_out = 1;
-    assign din_in = 32'd0;
-    //assign din_out = ; // For transferring to output BRAM
-    //assign /*Something*/ = dout_in; // For transferring from input BRAM
-    //assign addr_in = ; // Address of current input being transferred
-    //assign addr_out = ; // Address of current output being transferred
+    assign reset_L = ~reset; 
 
-    solver(.initial_vals(input_vector),
+    solver SOLVER(.initial_vals(input_vector),
            .start(/*NEEDS TO BE DELAYED*/),
            .clock(clk),
            .reset_L,
@@ -42,13 +23,14 @@ module top(
            //.final_vals(),
            .human_readable_vals(output_vector)
            );
+
     generate
         genvar i, j;
         for(i = 0; i < 9; i++) begin
-            for(j = 0; j < 9; i++) begin
+            for(j = 0; j < 9; j++) begin
                 register #(9) input_vector_buffer(
                     .clk, .reset_L,
-                    .D(data_in), //NEEDS DECODING
+                    .D(data_in[8:0]), //NEEDS DECODING
                     .Q(input_vector[i][j]),
                     .en(/* the ith/jth entry*/)
                 );
@@ -56,7 +38,105 @@ module top(
         end
     endgenerate
 
+    transferInputFSM iFSM(
+        .clk, .rst_L(reset_L),
+        .valid(valid_in),
+        .addr_en(addr_en_INPUT),
+        .done(puzzle_go)
+    );
+
+    transferOutputFSM oFSM(
+        .clk, .rst_L(reset_L),
+        .valid(valid_out),
+        .addr_en(addr_en_OUTPUT),
+        .addr(addr_out_OUTPUT),
+        .done(puzzle_done)       // Given by hardware
+    );
+
+    register #(7) CURR_REG_INPUT(
+        .clk, .reset_L,
+        .D(addr_in_INPUT),
+        .Q(addr_out_INPUT),
+        .en(addr_en_INPUT)
+    );
+
+    register #(7) CURR_REG_OUTPUT(
+        .clk, .reset_L,
+        .D(addr_in_OUTPUT),
+        .Q(addr_out_OUTPUT),
+        .en(addr_en_OUTPUT)
+    );
+  
 endmodule: top
+
+module transferInputFSM(
+    input  logic clk, rst_L,
+    input  logic valid,
+    output logic addr_en, done
+);
+
+    enum logic [1:0] {Wait, Go, Done} cs, ns;
+
+    always_comb begin
+        case(cs)
+            Wait: ns = (valid) ? Go : Wait;
+            Go:   ns = (~valid) ? Done : Go;
+            Done: ns = Wait;
+        endcase
+    end
+
+    always_comb begin
+        addr_en = 0;
+        done = 0;
+        case(cs)
+            Wait: addr_en = (valid);
+            Go:   addr_en = 1;
+            Done: done = 1;
+        endcase
+    end
+
+    always_ff @(posedge clk, negedge rst_L)
+        cs <= (~rst_L) ? Wait : ns;
+
+endmodule: transferInputFSM
+
+module transferOutputFSM(
+    input  logic clk, rst_L,
+    output logic valid,
+    output logic addr_en, 
+    input  logic done,
+    input  logic [6:0] addr
+);
+
+    enum logic {Wait, Go} cs, ns;
+
+    always_comb begin
+        case(cs)
+            Wait: ns = (done) ? Go : Wait;
+            Go:   ns = (addr == 7'd81) ? Wait : Go;
+        endcase
+    end
+
+    always_comb begin
+        addr_en = 0;
+        valid = 0;
+        case(cs)
+            Wait: begin
+                addr_en = (done);
+                valid = (done);
+            end
+            Go: begin
+                addr_en = 1;
+                valid = 1;
+            end 
+        endcase
+    end
+
+    always_ff @(posedge clk, negedge rst_L)
+        cs <= (~rst_L) ? Wait : ns;
+
+endmodule: transferOutputFSM
+
 
 module solver #(parameter WIDTH = 9, N = 3) (
     input logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] initial_vals,
@@ -110,7 +190,7 @@ module solver #(parameter WIDTH = 9, N = 3) (
 
     options_gen #(WIDTH, N) o(options, new_options);
 
-endmodule: top
+endmodule: solver
 
 
 module options_gen #(parameter WIDTH = 9, N = 3) (
