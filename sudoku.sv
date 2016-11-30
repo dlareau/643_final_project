@@ -1,13 +1,75 @@
-module top #(parameter WIDTH = 9, N = 3) (
+module top(
+    input  logic        clk, reset, start, 
+    output logic [31:0] addr_in,        
+    output logic        clk_in,
+    output logic [31:0] din_in, 
+    input  logic [31:0] dout_in,
+    output logic        we_in, en_in, rst_in,
+    output logic [31:0] addr_out,        
+    output logic        clk_out,
+    output logic [31:0] din_out, 
+    input  logic [31:0] dout_out,
+    output logic        we_out, en_out, rst_out
+);
+
+    logic [8:0][8:0][8:0] input_vector; // Could just load the solver register
+    logic [8:0][8:0][3:0] output_vector;
+   
+    logic reset_L;
+    
+    assign reset_L = ~reset;
+    
+    // BRAM interconnect logic
+    assign clk_in = clk;
+    assign clk_out = clk;
+    assign we_in = 0;
+    //assign we_out = ; // For transferring to output BRAM
+    assign rst_in = reset;
+    assign rst_out = reset;
+    assign en_in = 1;
+    assign en_out = 1;
+    assign din_in = 32'd0;
+    //assign din_out = ; // For transferring to output BRAM
+    //assign /*Something*/ = dout_in; // For transferring from input BRAM
+    //assign addr_in = ; // Address of current input being transferred
+    //assign addr_out = ; // Address of current output being transferred
+
+    solver(.initial_vals(input_vector),
+           .start(/*NEEDS TO BE DELAYED*/),
+           .clock(clk),
+           .reset_L,
+           //.fail(),
+           //.final_vals(),
+           .human_readable_vals(output_vector)
+           );
+    generate
+        genvar i, j;
+        for(i = 0; i < 9; i++) begin
+            for(j = 0; j < 9; i++) begin
+                register #(9) input_vector_buffer(
+                    .clk, .reset_L,
+                    .D(data_in), //NEEDS DECODING
+                    .Q(input_vector[i][j]),
+                    .en(/* the ith/jth entry*/)
+                );
+            end
+        end
+    endgenerate
+
+endmodule: top
+
+module solver #(parameter WIDTH = 9, N = 3) (
     input logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] initial_vals,
     input logic start, clock, reset_L,
-    output logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] final_vals,
-    output logic [WIDTH-1:0][WIDTH-1:0][3:0] human_readable_vals,
-    output logic fail);
+    //output logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] final_vals,
+    output logic [WIDTH-1:0][WIDTH-1:0][3:0] human_readable_vals
+    //output logic fail
+    );
 
     logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] options, new_options;
-    logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] final_rows, final_cols, final_sectors;
+    logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] final_rows, final_cols, final_sectors, final_vals;
     logic [WIDTH-1:0][WIDTH-1:0] row_vals, col_vals, sector_vals, overall_fail;
+    logic fail;
 
     assign fail = |overall_fail;
     generate
@@ -125,7 +187,7 @@ module square #(parameter WIDTH = 9, N = 3) (
     assign load_val = load_initial ? initial_val : ~options;
     assign load = (valid || load_initial) && !(final_val);
 
-    register #(WIDTH) r1(final_val, load_val, ~(load), clock, reset_L);
+    register #(WIDTH) r1(final_val, load_val, load, clock, reset_L);
     //register #(WIDTH) r2(options_out, options_before_latch, ~(valid || load_initial), clock, reset_L);
 
     assign all_ones = &options;
@@ -143,18 +205,18 @@ module one_hot_detector #(parameter WIDTH = 9) (
 
 endmodule
 
-module register #(parameter WIDTH = 16) (
-   output logic [WIDTH-1:0] out,
-   input [WIDTH-1:0]      in,
-   input                  load_L,
-   input                  clock,
-   input                  reset_L);
+module register #(parameter WIDTH = 8) (
+   output logic [WIDTH-1:0] Q,
+   input  logic [WIDTH-1:0] D,
+   input  logic             en,
+   input  logic             clk,
+   input  logic             reset_L);
 
-   always_ff @ (posedge clock, negedge reset_L) begin
+   always_ff @ (posedge clk, negedge reset_L) begin
       if(~reset_L)
-         out <= 'h0000;
-      else if (~load_L)
-         out <= in;
+         Q <= 'h0000;
+      else if (en)
+         Q <= D;
    end
 
 endmodule
@@ -181,43 +243,39 @@ module bcd_encoder(
 
 endmodule: bcd_encoder
 
+
+/*
 module solver_TB;
 
-  logic [8:0][8:0][8:0] initial_vals, final_vals;
-  logic [8:0][8:0][3:0] human_readable_vals;
-  logic start, clock, reset_L, fail;
-
-  top #(9, 3) DUT(.*);
+    logic [8:0][8:0][8:0] initial_vals, final_vals;
+    logic [8:0][8:0][3:0] human_readable_vals;
+    logic start, clock, reset_L, fail;
+  
+    //top #(9, 3) DUT(.*);
+    input_puzzle INPUT(
+        .clka(),
+        .wea(1'b0),
+        .addra(),
+        .dina(), 
+        .douta(), 
+        .clkb(),
+        .web(1'b0),
+        .addrb(),
+        .dinb(),
+        .doutb()
+    );
 
   initial begin
-      clock = 0;
-      forever #5 clock = ~clock;
-  end
-
-  initial begin
-    $monitor("Values @ %d\n%h\n%h\n%h\n%h\n%h\n%h\n%h\n%h\n%h", $time,
-             human_readable_vals[0], human_readable_vals[1], human_readable_vals[2],
-             human_readable_vals[3], human_readable_vals[4], human_readable_vals[5],
-             human_readable_vals[6], human_readable_vals[7], human_readable_vals[8]);
-    reset_L = 1;
-initial_vals[0] = 81'b000000000_010000000_000000000_000000000_000000000_000000000_000000001_000010000_000000000_;
-initial_vals[1] = 81'b000001000_000000000_000100000_000010000_000000000_100000000_000000000_010000000_000000000_;
-initial_vals[2] = 81'b000000000_000000000_000000000_000000000_000000000_010000000_000000000_000000000_000000000_;
-initial_vals[3] = 81'b000000000_000000000_000000000_000000000_000000000_000000000_000000000_000000000_000000000_;
-initial_vals[4] = 81'b000000000_000000000_000000010_000000000_000001000_000000000_000000000_000000000_000000100_;
-initial_vals[5] = 81'b000000100_000000000_000000000_010000000_000000000_000000001_000000000_000000000_000000000_;
-initial_vals[6] = 81'b100000000_000000000_000000000_000000000_001000000_000000000_000000000_000000000_000000000_;
-initial_vals[7] = 81'b000100000_000000000_000000000_000000000_000000000_000000000_000000000_000000000_000001000_;
-initial_vals[8] = 81'b000000001_000010000_000000000_000000000_000000000_000000000_000000000_100000000_000000000_;
-    #2;
-    reset_L <= 0;
-    @(posedge clock);
-    reset_L <= 1;
-    start <= 1;
-    @(posedge clock);
-    start <= 0;
-    @(posedge clock);
-    #5000 $finish;
+    initial_vals[0] = 81'b000000000_000000010_001000000_000000000_000001000_000000000_010000000_000000000_000000000;
+    initial_vals[1] = 81'b000000000_000000001_000000000_001000000_000000000_000000000_100000000_000001000_000000000;
+    initial_vals[2] = 81'b000001000_000000000_010000000_000000010_000000000_000000000_000000100_000010000_000000000;
+    initial_vals[3] = 81'b000000000_000000000_100000000_000000000_000010000_000000000_000000000_000000000_000000000;
+    initial_vals[4] = 81'b000010000_000000000_000000000_010000000_001000000_000001000_000000000_000000000_000100000;
+    initial_vals[5] = 81'b000000000_000000000_000000000_000000000_000000001_000000000_000001000_000000000_000000000;
+    initial_vals[6] = 81'b000000000_001000000_000001000_000000000_000000000_100000000_000100000_000000000_010000000;
+    initial_vals[7] = 81'b000000000_100000000_000100000_000000000_000000000_001000000_000000000_000000100_000000000;
+    initial_vals[8] = 81'b000000000_000000000_000000100_000000000_000000010_000000000_001000000_000000001_000000000;
   end
 
 endmodule: solver_TB
+*/
