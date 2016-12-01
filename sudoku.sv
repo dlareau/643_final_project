@@ -10,63 +10,87 @@ module top(
     logic [8:0][8:0][3:0] output_vector;
    
     logic reset_L;
-    logic [6:0] addr_in_INPUT, addr_out_INPUT, addr_in_OUTPUT, addr_out_OUTPUT;
+    logic [3:0] curr_row_INPUT, curr_col_INPUT, curr_row_OUTPUT, curr_col_OUTPUT;
     logic       addr_en_INPUT, addr_en_OUTPUT, puzzle_go, puzzle_done; 
     
     assign reset_L = ~reset; 
 
-    solver SOLVER(.initial_vals(input_vector),
-           .start(/*NEEDS TO BE DELAYED*/),
-           .clock(clk),
-           .reset_L,
-           //.fail(),
-           //.final_vals(),
-           .human_readable_vals(output_vector)
-           );
+    solver SOLVER(
+        .initial_vals(input_vector),
+        .start(puzzle_go),
+        .clock(clk),
+        .reset_L,
+        //.fail(),
+        //.final_vals(),
+        .human_readable_vals(output_vector),
+        .done(puzzle_done)
+    );
 
     generate
         genvar i, j;
         for(i = 0; i < 9; i++) begin
             for(j = 0; j < 9; j++) begin
+                logic [8:0] data_in_decoded;
+                bcd_decoder INPUT_DECODER(data_in[3:0], data_in_decoded);
                 register #(9) input_vector_buffer(
                     .clk, .reset_L,
-                    .D(data_in[8:0]), //NEEDS DECODING
+                    .D(data_in_decoded),
                     .Q(input_vector[i][j]),
-                    .en(/* the ith/jth entry*/)
+                    .en(
+                        (addr_out_INPUT / 9 == i) & // Row 
+                        (addr_out_INPUT % 9 == j)   // Col
+                    )
                 );
             end
         end
     endgenerate
 
-    transferInputFSM iFSM(
+    transferInputFSM INPUT_FSM(
         .clk, .rst_L(reset_L),
         .valid(valid_in),
         .addr_en(addr_en_INPUT),
         .done(puzzle_go)
     );
 
-    transferOutputFSM oFSM(
+    transferOutputFSM OUTPUT_FSM(
         .clk, .rst_L(reset_L),
         .valid(valid_out),
         .addr_en(addr_en_OUTPUT),
-        .addr(addr_out_OUTPUT),
+        .row(curr_row_OUTPUT),
+        .col(curr_col_OUTPUT)
         .done(puzzle_done)       // Given by hardware
     );
 
-    register #(7) CURR_REG_INPUT(
+    counter #(4) CURR_ROW_INPUT(
         .clk, .reset_L,
-        .D(addr_in_INPUT),
-        .Q(addr_out_INPUT),
-        .en(addr_en_INPUT)
+        .count(curr_row_INPUT),
+        .en(addr_en_INPUT && curr_col_INPUT == 4'd9),
+        .clear(curr_row_INPUT == 4'd9)
     );
 
-    register #(7) CURR_REG_OUTPUT(
+    counter #(4) CURR_COL_INPUT(
+        .clk, .rst_L(reset_L),
+        .clear(curr_col_INPUT == 4'd9),
+        .en(addr_en_INPUT),
+        .count(curr_col_INPUT)
+    );
+
+    counter #(4) CURR_ROW_OUTPUT(
         .clk, .reset_L,
-        .D(addr_in_OUTPUT),
-        .Q(addr_out_OUTPUT),
+        .count(curr_row_OUTPUT),
+        .en(addr_en_OUTPUT && curr_col_OUTPUT == 4'd9),
+        .clear(curr_row_OUTPUT == 4'd9)
+    );
+
+    counter #(4) CURR_COL_OUTPUT(
+        .clk, .rst_L(reset_L),
+        .clear(curr_col_OUTPUT == 4'd9),
+        .count(curr_col_OUTPUT),
         .en(addr_en_OUTPUT)
     );
-  
+
+    assign data_out = {28'd0, output_vector[curr_row_OUTPUT][curr_col_OUTPUT]};
+
 endmodule: top
 
 module transferInputFSM(
@@ -105,7 +129,7 @@ module transferOutputFSM(
     output logic valid,
     output logic addr_en, 
     input  logic done,
-    input  logic [6:0] addr
+    input  logic [3:0] row, col
 );
 
     enum logic {Wait, Go} cs, ns;
@@ -113,7 +137,7 @@ module transferOutputFSM(
     always_comb begin
         case(cs)
             Wait: ns = (done) ? Go : Wait;
-            Go:   ns = (addr == 7'd81) ? Wait : Go;
+            Go:   ns = (row == 4'd9 && col == 4'd9) ? Wait : Go;
         endcase
     end
 
@@ -142,7 +166,8 @@ module solver #(parameter WIDTH = 9, N = 3) (
     input logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] initial_vals,
     input logic start, clock, reset_L,
     //output logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] final_vals,
-    output logic [WIDTH-1:0][WIDTH-1:0][3:0] human_readable_vals
+    output logic [WIDTH-1:0][WIDTH-1:0][3:0] human_readable_vals,
+    output logic done // ******POPULATE THIS
     //output logic fail
     );
 
@@ -301,6 +326,18 @@ module register #(parameter WIDTH = 8) (
 
 endmodule
 
+module counter #(parameter WIDTH = 8) (
+    output logic [WIDTH-1] count,
+    input  logic           clk, rst_L, clear, en
+);
+
+    always_ff @(posedge clk, negedge rst_L) begin
+        if (~rst_L)     count <= 0;
+        else if (clear) count <= 0;
+        else if (en)    count <= count + 1;
+ 
+endmodule: counter
+
 module bcd_encoder(
     input logic [8:0] in,
     output logic [3:0] out);
@@ -323,6 +360,28 @@ module bcd_encoder(
 
 endmodule: bcd_encoder
 
+module bcd_decoder(
+    input  logic [3:0] in,
+    output logic [8:0] out
+);
+
+    always_comb begin
+        case(in)
+            4'd0: out = 9'b0_0000_0000;
+            4'd1: out = 9'b0_0000_0001;
+            4'd2: out = 9'b0_0000_0010;
+            4'd3: out = 9'b0_0000_0100;
+            4'd4: out = 9'b0_0000_1000;
+            4'd5: out = 9'b0_0001_0000;
+            4'd6: out = 9'b0_0010_0000;
+            4'd7: out = 9'b0_0100_0000;
+            4'd8: out = 9'b0_1000_0000;
+            4'd9: out = 9'b1_0000_0000;
+            default: out = 9'd0;
+        endcase
+    end
+
+endmodule: bcd_decoder
 
 /*
 module solver_TB;
