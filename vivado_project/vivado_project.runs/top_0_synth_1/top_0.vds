@@ -1,0 +1,3501 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Dec  1 15:44:44 2016
+# Process ID: 31755
+# Log file: /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.runs/top_0_synth_1/top_0.vds
+# Journal file: /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.runs/top_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.runs/top_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/Vivado/2015.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'top_0' generated file not found '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/top_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'top_0' generated file not found '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/top_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'top_0' generated file not found '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/top_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'top_0' generated file not found '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/top_0_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'top_0' generated file not found '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/top_0_funcsim.vhdl'. Please regenerate to continue.
+Command: synth_design -top top_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2016.07' and will expire in -123 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1070.828 ; gain = 161.520 ; free physical = 8434 ; free virtual = 21565
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_0' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/synth/top_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'top' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:1]
+INFO: [Synth 8-638] synthesizing module 'solver' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:168]
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bcd_encoder' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:354]
+INFO: [Synth 8-256] done synthesizing module 'bcd_encoder' (1#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:354]
+INFO: [Synth 8-638] synthesizing module 'square' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:291]
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'one_hot_detector' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:317]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'one_hot_detector' (2#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:317]
+INFO: [Synth 8-638] synthesizing module 'register' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:325]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register' (3#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:325]
+INFO: [Synth 8-256] done synthesizing module 'square' (4#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:291]
+INFO: [Synth 8-638] synthesizing module 'options_gen' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:232]
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'options_gen' (5#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:232]
+INFO: [Synth 8-256] done synthesizing module 'solver' (6#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:168]
+INFO: [Synth 8-638] synthesizing module 'bcd_decoder' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:376]
+INFO: [Synth 8-256] done synthesizing module 'bcd_decoder' (7#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:376]
+INFO: [Synth 8-638] synthesizing module 'transferInputFSM' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:95]
+INFO: [Synth 8-155] case statement is not full and has no default [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:104]
+INFO: [Synth 8-155] case statement is not full and has no default [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:114]
+WARNING: [Synth 8-87] always_comb on 'ns_reg' did not result in combinational logic [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:105]
+INFO: [Synth 8-256] done synthesizing module 'transferInputFSM' (8#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:95]
+INFO: [Synth 8-638] synthesizing module 'transferOutputFSM' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:126]
+INFO: [Synth 8-155] case statement is not full and has no default [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:137]
+INFO: [Synth 8-155] case statement is not full and has no default [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:147]
+WARNING: [Synth 8-87] always_comb on 'ns_reg' did not result in combinational logic [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:138]
+INFO: [Synth 8-256] done synthesizing module 'transferOutputFSM' (9#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:126]
+INFO: [Synth 8-638] synthesizing module 'counter' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:341]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (10#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:341]
+INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'top_0' (12#1) [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/synth/top_0.v:56]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1133.117 ; gain = 223.809 ; free physical = 8366 ; free virtual = 21502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1133.117 ; gain = 223.809 ; free physical = 8365 ; free virtual = 21501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1141.117 ; gain = 231.809 ; free physical = 8365 ; free virtual = 21501
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'ns_reg' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:105]
+WARNING: [Synth 8-327] inferring latch for variable 'ns_reg' [/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/ip/top_0/sudoku.sv:138]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1185.168 ; gain = 275.859 ; free physical = 8274 ; free virtual = 21457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[0].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[1].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[2].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[3].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[4].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[5].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[6].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[7].genblk1[8].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[0].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[1].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[2].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[3].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[4].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[5].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[6].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[7].INPUT_DECODER '
+INFO: [Synth 8-223] decloning instance 'inst/\genblk1[0].genblk1[0].INPUT_DECODER ' (bcd_decoder) to 'inst/\genblk1[8].genblk1[8].INPUT_DECODER '
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |solver__GB0   |           1|     37922|
+|2     |solver__GB1   |           1|      9121|
+|3     |solver__GB2   |           1|     11816|
+|4     |top__GC0      |           1|      2076|
++------+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 324   
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                9 Bit    Registers := 162   
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 81    
+	  11 Input      9 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 81    
+	  11 Input      4 Bit        Muxes := 81    
+	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module one_hot_detector__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__26 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__27 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__28 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__29 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__30 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__31 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__33 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__34 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__35 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__36 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__37 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__38 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__39 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__40 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__41 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__42 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__43 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__44 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__45 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__46 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__47 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__48 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__49 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__50 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__51 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__52 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__53 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__54 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__55 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__56 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__57 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__58 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__59 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__61 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__62 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__63 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__64 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__65 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__66 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__67 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__68 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__69 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__70 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__71 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__72 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__73 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__74 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__75 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__76 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__77 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__78 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__79 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__80 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__81 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__82 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__83 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__84 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__85 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__86 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__87 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__88 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__89 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__90 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__91 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__92 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__93 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__94 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__95 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__96 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__97 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__98 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__99 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__100 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__101 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__102 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__103 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__104 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__105 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__106 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__107 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__108 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__109 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__110 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__111 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__112 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__113 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__114 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__115 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__116 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__117 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__118 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__119 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__120 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__121 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__122 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__123 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__124 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__125 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__126 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__127 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__128 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__129 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__130 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__131 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__132 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__133 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__134 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__135 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__136 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__137 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__138 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__139 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__140 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__141 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__142 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__143 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__144 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__145 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__146 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__147 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__148 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__149 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__150 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__151 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__152 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__153 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__154 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__155 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__156 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__157 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__158 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__159 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__160 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__161 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__162 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__163 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__164 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__165 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__166 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__167 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__168 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__169 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__170 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__171 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__172 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__173 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__174 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__175 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__176 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__177 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__178 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__179 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__180 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__181 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__182 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__183 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__184 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__185 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__186 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__187 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__188 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__189 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__190 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__191 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__192 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__193 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__194 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__195 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__196 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__197 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__198 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__199 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__200 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__201 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__202 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__203 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__204 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__205 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__206 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__207 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__208 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__209 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__210 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__211 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__212 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__213 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__214 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__215 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__216 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__217 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__218 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__219 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__220 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__221 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__222 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__223 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__224 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__225 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__226 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__227 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__228 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__229 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__230 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__231 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__232 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__233 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__234 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__235 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__236 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__237 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__238 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__239 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__240 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__241 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__242 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__243 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module one_hot_detector__274 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module bcd_encoder__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__244 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__245 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__246 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__247 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__248 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__249 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__250 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__251 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__252 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__253 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__254 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__255 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__256 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__257 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__258 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__259 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__260 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__261 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__262 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__263 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__23 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__264 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__25 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__265 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__26 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__266 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__27 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__28 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__267 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__29 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__268 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__25 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__30 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__269 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__26 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__31 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__270 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__27 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__32 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__271 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__28 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__272 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__29 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__33 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__273 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__30 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__34 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__31 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__35 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__36 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__275 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__32 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__276 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__33 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__33 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__37 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__277 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__34 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__34 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__38 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__278 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__35 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__35 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__39 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__40 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__279 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__36 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__36 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__41 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__280 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__37 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__37 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__42 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__281 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__38 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__38 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__43 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__282 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__39 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__39 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__44 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__283 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__40 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__40 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__284 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__41 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__41 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__45 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__285 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__42 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__42 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__46 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__286 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__43 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__43 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__47 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module bcd_encoder__48 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__287 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__44 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__44 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__49 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__288 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__45 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__45 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__50 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__289 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__46 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__46 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__290 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__47 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__47 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__291 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__48 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__48 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__51 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__292 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__49 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__49 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__293 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__50 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__50 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__52 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__294 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__51 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__51 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__53 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__295 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__52 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__52 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__54 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__296 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__53 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__53 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__297 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__54 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__54 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module one_hot_detector__298 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__55 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__55 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__55 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__299 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__56 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__56 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__56 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__300 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__57 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__57 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__57 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__301 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__58 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__58 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__58 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__302 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__59 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__59 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__59 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__303 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__60 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__60 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__60 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__304 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__61 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__61 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__61 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__305 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__62 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__62 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__62 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__306 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__63 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__63 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__63 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__307 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__64 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__64 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__308 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__65 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__65 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__65 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__309 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__66 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__66 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__66 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__310 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__67 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__67 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__67 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__311 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__68 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__68 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__68 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__312 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__69 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__69 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__69 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__313 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__70 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__70 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__70 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__314 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__71 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__71 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__71 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__315 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__72 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__72 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__72 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__316 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__73 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__73 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__73 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__317 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__74 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__74 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__74 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__318 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__75 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__75 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__75 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__319 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__76 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__76 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__76 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__320 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__77 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__77 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__77 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__321 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__78 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__78 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__78 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__322 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__79 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__79 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__79 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector__323 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__80 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square__80 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder__80 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module one_hot_detector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module register__81 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module square 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_encoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+Module transferInputFSM 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module transferOutputFSM 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bcd_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      9 Bit        Muxes := 1     
+Module register__82 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__83 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__84 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__85 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__86 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__87 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__88 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__89 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__90 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__91 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__92 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__93 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__94 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__95 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__96 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__97 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__98 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__99 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__100 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__101 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__102 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__103 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__104 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__105 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__106 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__107 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__108 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__109 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__110 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__111 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__112 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__113 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__114 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__115 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__116 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__117 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__118 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__119 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__120 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__121 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__122 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__123 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__124 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__125 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__126 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__127 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__128 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__129 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__130 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__131 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__132 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__133 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__134 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__135 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__136 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__137 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__138 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__139 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__140 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__141 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__142 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__143 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__144 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__145 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__146 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__147 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__148 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__149 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__150 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__151 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__152 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__153 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__154 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__155 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__156 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__157 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__158 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__159 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__160 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__161 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1267.488 ; gain = 358.180 ; free physical = 8192 ; free virtual = 21380
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3917] design top_0 has port data_out[31] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[30] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[29] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[28] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[27] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[26] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[25] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[24] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[23] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[22] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[21] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[20] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[19] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[18] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[17] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[16] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[15] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[14] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[13] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[12] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[11] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[10] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[9] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[8] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[7] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[6] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[5] driven by constant 0
+INFO: [Synth 8-3917] design top_0 has port data_out[4] driven by constant 0
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[31]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[30]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[29]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[28]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[27]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[26]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[25]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[24]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[23]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[22]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[21]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[20]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[19]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[18]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[17]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[16]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[15]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[14]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[13]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[12]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[11]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[10]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[9]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[8]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design top_0 has unconnected port data_in[4]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.496 ; gain = 366.188 ; free physical = 8182 ; free virtual = 21370
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.496 ; gain = 366.188 ; free physical = 8182 ; free virtual = 21370
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |solver__GB0   |           1|     38480|
+|2     |solver__GB1   |           1|      9517|
+|3     |solver__GB2   |           1|     12320|
+|4     |top__GC0      |           1|      2071|
++------+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1343.020 ; gain = 433.711 ; free physical = 8109 ; free virtual = 21301
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1343.020 ; gain = 433.711 ; free physical = 8109 ; free virtual = 21301
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |solver__GB0   |           1|     17362|
+|2     |solver__GB1   |           1|      5408|
+|3     |solver__GB2   |           1|      7087|
+|4     |top__GC0      |           1|      1311|
++------+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1343.020 ; gain = 433.711 ; free physical = 8109 ; free virtual = 21301
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1343.020 ; gain = 433.711 ; free physical = 8109 ; free virtual = 21301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |solver__GB0   |           1|     17362|
+|2     |solver__GB1   |           1|      5408|
+|3     |solver__GB2   |           1|      7087|
+|4     |top__GC0      |           1|      1311|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7633 ; free virtual = 20825
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7632 ; free virtual = 20824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7632 ; free virtual = 20824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7632 ; free virtual = 20824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7632 ; free virtual = 20824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7632 ; free virtual = 20824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |    13|
+|2     |LUT2  |    92|
+|3     |LUT3  |   951|
+|4     |LUT4  |  1770|
+|5     |LUT5  |  1857|
+|6     |LUT6  |  2375|
+|7     |MUXF7 |    44|
+|8     |MUXF8 |     4|
+|9     |FDCE  |  1478|
+|10    |LD    |     4|
++------+------+------+
+
+Report Instance Areas: 
++------+------------------------------------------------+------------------+------+
+|      |Instance                                        |Module            |Cells |
++------+------------------------------------------------+------------------+------+
+|1     |top                                             |                  |  8588|
+|2     |  inst                                          |top               |  8588|
+|3     |    CURR_COL_INPUT                              |counter           |    19|
+|4     |    CURR_COL_OUTPUT                             |counter_0         |    10|
+|5     |    CURR_ROW_INPUT                              |counter_1         |    91|
+|6     |    CURR_ROW_OUTPUT                             |counter_2         |    11|
+|7     |    INPUT_FSM                                   |transferInputFSM  |     8|
+|8     |    OUTPUT_FSM                                  |transferOutputFSM |     7|
+|9     |    SOLVER                                      |solver            |  7599|
+|10    |      \row_square[0].col_square[0].s            |square            |    21|
+|11    |        r1                                      |register_243      |    21|
+|12    |      \row_square[0].col_square[1].s            |square_83         |    21|
+|13    |        r1                                      |register_242      |    21|
+|14    |      \row_square[0].col_square[2].s            |square_84         |    30|
+|15    |        r1                                      |register_241      |    30|
+|16    |      \row_square[0].col_square[3].s            |square_85         |    21|
+|17    |        r1                                      |register_240      |    21|
+|18    |      \row_square[0].col_square[4].s            |square_86         |    95|
+|19    |        r1                                      |register_239      |    95|
+|20    |      \row_square[0].col_square[5].s            |square_87         |    31|
+|21    |        r1                                      |register_238      |    31|
+|22    |      \row_square[0].col_square[6].s            |square_88         |    21|
+|23    |        r1                                      |register_237      |    21|
+|24    |      \row_square[0].col_square[7].s            |square_89         |   100|
+|25    |        r1                                      |register_236      |   100|
+|26    |      \row_square[0].col_square[8].s            |square_90         |    27|
+|27    |        r1                                      |register_235      |    27|
+|28    |      \row_square[1].col_square[0].s            |square_91         |   400|
+|29    |        r1                                      |register_234      |   400|
+|30    |      \row_square[1].col_square[1].s            |square_92         |   661|
+|31    |        r1                                      |register_233      |   661|
+|32    |      \row_square[1].col_square[2].s            |square_93         |    24|
+|33    |        r1                                      |register_232      |    24|
+|34    |      \row_square[1].col_square[3].s            |square_94         |    21|
+|35    |        r1                                      |register_231      |    21|
+|36    |      \row_square[1].col_square[4].s            |square_95         |    30|
+|37    |        r1                                      |register_230      |    30|
+|38    |      \row_square[1].col_square[5].s            |square_96         |    39|
+|39    |        r1                                      |register_229      |    39|
+|40    |      \row_square[1].col_square[6].s            |square_97         |    21|
+|41    |        r1                                      |register_228      |    21|
+|42    |      \row_square[1].col_square[7].s            |square_98         |   105|
+|43    |        r1                                      |register_227      |   105|
+|44    |      \row_square[1].col_square[8].s            |square_99         |   409|
+|45    |        r1                                      |register_226      |   409|
+|46    |      \row_square[2].col_square[0].s            |square_100        |    39|
+|47    |        r1                                      |register_225      |    39|
+|48    |      \row_square[2].col_square[1].s            |square_101        |    21|
+|49    |        r1                                      |register_224      |    21|
+|50    |      \row_square[2].col_square[2].s            |square_102        |   431|
+|51    |        r1                                      |register_223      |   431|
+|52    |      \row_square[2].col_square[3].s            |square_103        |    24|
+|53    |        r1                                      |register_222      |    24|
+|54    |      \row_square[2].col_square[4].s            |square_104        |    21|
+|55    |        r1                                      |register_221      |    21|
+|56    |      \row_square[2].col_square[5].s            |square_105        |    31|
+|57    |        r1                                      |register_220      |    31|
+|58    |      \row_square[2].col_square[6].s            |square_106        |    24|
+|59    |        r1                                      |register_219      |    24|
+|60    |      \row_square[2].col_square[7].s            |square_107        |   765|
+|61    |        r1                                      |register_218      |   765|
+|62    |      \row_square[2].col_square[8].s            |square_108        |    25|
+|63    |        r1                                      |register_217      |    25|
+|64    |      \row_square[3].col_square[0].s            |square_109        |    29|
+|65    |        r1                                      |register_216      |    29|
+|66    |      \row_square[3].col_square[1].s            |square_110        |    38|
+|67    |        r1                                      |register_215      |    38|
+|68    |      \row_square[3].col_square[2].s            |square_111        |    39|
+|69    |        r1                                      |register_214      |    39|
+|70    |      \row_square[3].col_square[3].s            |square_112        |    29|
+|71    |        r1                                      |register_213      |    29|
+|72    |      \row_square[3].col_square[4].s            |square_113        |   103|
+|73    |        r1                                      |register_212      |   103|
+|74    |      \row_square[3].col_square[5].s            |square_114        |    39|
+|75    |        r1                                      |register_211      |    39|
+|76    |      \row_square[3].col_square[6].s            |square_115        |   498|
+|77    |        r1                                      |register_210      |   498|
+|78    |      \row_square[3].col_square[7].s            |square_116        |   123|
+|79    |        r1                                      |register_209      |   123|
+|80    |      \row_square[3].col_square[8].s            |square_117        |    30|
+|81    |        r1                                      |register_208      |    30|
+|82    |      \row_square[4].col_square[0].s            |square_118        |    21|
+|83    |        r1                                      |register_207      |    21|
+|84    |      \row_square[4].col_square[1].s            |square_119        |    30|
+|85    |        r1                                      |register_206      |    30|
+|86    |      \row_square[4].col_square[2].s            |square_120        |    39|
+|87    |        r1                                      |register_205      |    39|
+|88    |      \row_square[4].col_square[3].s            |square_121        |    21|
+|89    |        r1                                      |register_204      |    21|
+|90    |      \row_square[4].col_square[4].s            |square_122        |    30|
+|91    |        r1                                      |register_203      |    30|
+|92    |      \row_square[4].col_square[5].s            |square_123        |    23|
+|93    |        r1                                      |register_202      |    23|
+|94    |      \row_square[4].col_square[6].s            |square_124        |    94|
+|95    |        r1                                      |register_201      |    94|
+|96    |      \row_square[4].col_square[7].s            |square_125        |    39|
+|97    |        r1                                      |register_200      |    39|
+|98    |      \row_square[4].col_square[8].s            |square_126        |    30|
+|99    |        r1                                      |register_199      |    30|
+|100   |      \row_square[5].col_square[0].s            |square_127        |    21|
+|101   |        r1                                      |register_198      |    21|
+|102   |      \row_square[5].col_square[1].s            |square_128        |    21|
+|103   |        r1                                      |register_197      |    21|
+|104   |      \row_square[5].col_square[2].s            |square_129        |    31|
+|105   |        r1                                      |register_196      |    31|
+|106   |      \row_square[5].col_square[3].s            |square_130        |   741|
+|107   |        r1                                      |register_195      |   741|
+|108   |      \row_square[5].col_square[4].s            |square_131        |    21|
+|109   |        r1                                      |register_194      |    21|
+|110   |      \row_square[5].col_square[5].s            |square_132        |    21|
+|111   |        r1                                      |register_193      |    21|
+|112   |      \row_square[5].col_square[6].s            |square_133        |    21|
+|113   |        r1                                      |register_192      |    21|
+|114   |      \row_square[5].col_square[7].s            |square_134        |    30|
+|115   |        r1                                      |register_191      |    30|
+|116   |      \row_square[5].col_square[8].s            |square_135        |    23|
+|117   |        r1                                      |register_190      |    23|
+|118   |      \row_square[6].col_square[0].s            |square_136        |    31|
+|119   |        r1                                      |register_189      |    31|
+|120   |      \row_square[6].col_square[1].s            |square_137        |    21|
+|121   |        r1                                      |register_188      |    21|
+|122   |      \row_square[6].col_square[2].s            |square_138        |    21|
+|123   |        r1                                      |register_187      |    21|
+|124   |      \row_square[6].col_square[3].s            |square_139        |    39|
+|125   |        r1                                      |register_186      |    39|
+|126   |      \row_square[6].col_square[4].s            |square_140        |   446|
+|127   |        r1                                      |register_185      |   446|
+|128   |      \row_square[6].col_square[5].s            |square_141        |   437|
+|129   |        r1                                      |register_184      |   437|
+|130   |      \row_square[6].col_square[6].s            |square_142        |    48|
+|131   |        r1                                      |register_183      |    48|
+|132   |      \row_square[6].col_square[7].s            |square_143        |    24|
+|133   |        r1                                      |register_182      |    24|
+|134   |      \row_square[6].col_square[8].s            |square_144        |   112|
+|135   |        r1                                      |register_181      |   112|
+|136   |      \row_square[7].col_square[0].s            |square_145        |    61|
+|137   |        r1                                      |register_180      |    61|
+|138   |      \row_square[7].col_square[1].s            |square_146        |    25|
+|139   |        r1                                      |register_179      |    25|
+|140   |      \row_square[7].col_square[2].s            |square_147        |    35|
+|141   |        r1                                      |register_178      |    35|
+|142   |      \row_square[7].col_square[3].s            |square_148        |    25|
+|143   |        r1                                      |register_177      |    25|
+|144   |      \row_square[7].col_square[4].s            |square_149        |    34|
+|145   |        r1                                      |register_176      |    34|
+|146   |      \row_square[7].col_square[5].s            |square_150        |   120|
+|147   |        r1                                      |register_175      |   120|
+|148   |      \row_square[7].col_square[6].s            |square_151        |    25|
+|149   |        r1                                      |register_174      |    25|
+|150   |      \row_square[7].col_square[7].s            |square_152        |    25|
+|151   |        r1                                      |register_173      |    25|
+|152   |      \row_square[7].col_square[8].s            |square_153        |    26|
+|153   |        r1                                      |register_172      |    26|
+|154   |      \row_square[8].col_square[0].s            |square_154        |    21|
+|155   |        r1                                      |register_171      |    21|
+|156   |      \row_square[8].col_square[1].s            |square_155        |    36|
+|157   |        r1                                      |register_170      |    36|
+|158   |      \row_square[8].col_square[2].s            |square_156        |    30|
+|159   |        r1                                      |register_169      |    30|
+|160   |      \row_square[8].col_square[3].s            |square_157        |    25|
+|161   |        r1                                      |register_168      |    25|
+|162   |      \row_square[8].col_square[4].s            |square_158        |    95|
+|163   |        r1                                      |register_167      |    95|
+|164   |      \row_square[8].col_square[5].s            |square_159        |    30|
+|165   |        r1                                      |register_166      |    30|
+|166   |      \row_square[8].col_square[6].s            |square_160        |    21|
+|167   |        r1                                      |register_165      |    21|
+|168   |      \row_square[8].col_square[7].s            |square_161        |   118|
+|169   |        r1                                      |register_164      |   118|
+|170   |      \row_square[8].col_square[8].s            |square_162        |    25|
+|171   |        r1                                      |register_163      |    25|
+|172   |    \genblk1[0].genblk1[0].INPUT_DECODER        |bcd_decoder       |     9|
+|173   |    \genblk1[0].genblk1[0].input_vector_buffer  |register          |    10|
+|174   |    \genblk1[0].genblk1[1].input_vector_buffer  |register_3        |    10|
+|175   |    \genblk1[0].genblk1[2].input_vector_buffer  |register_4        |    10|
+|176   |    \genblk1[0].genblk1[3].input_vector_buffer  |register_5        |    10|
+|177   |    \genblk1[0].genblk1[4].input_vector_buffer  |register_6        |    10|
+|178   |    \genblk1[0].genblk1[5].input_vector_buffer  |register_7        |    10|
+|179   |    \genblk1[0].genblk1[6].input_vector_buffer  |register_8        |    11|
+|180   |    \genblk1[0].genblk1[7].input_vector_buffer  |register_9        |    10|
+|181   |    \genblk1[0].genblk1[8].input_vector_buffer  |register_10       |    10|
+|182   |    \genblk1[1].genblk1[0].input_vector_buffer  |register_11       |    10|
+|183   |    \genblk1[1].genblk1[1].input_vector_buffer  |register_12       |    10|
+|184   |    \genblk1[1].genblk1[2].input_vector_buffer  |register_13       |    10|
+|185   |    \genblk1[1].genblk1[3].input_vector_buffer  |register_14       |    10|
+|186   |    \genblk1[1].genblk1[4].input_vector_buffer  |register_15       |    10|
+|187   |    \genblk1[1].genblk1[5].input_vector_buffer  |register_16       |    10|
+|188   |    \genblk1[1].genblk1[6].input_vector_buffer  |register_17       |    10|
+|189   |    \genblk1[1].genblk1[7].input_vector_buffer  |register_18       |    10|
+|190   |    \genblk1[1].genblk1[8].input_vector_buffer  |register_19       |    10|
+|191   |    \genblk1[2].genblk1[0].input_vector_buffer  |register_20       |    10|
+|192   |    \genblk1[2].genblk1[1].input_vector_buffer  |register_21       |    10|
+|193   |    \genblk1[2].genblk1[2].input_vector_buffer  |register_22       |    11|
+|194   |    \genblk1[2].genblk1[3].input_vector_buffer  |register_23       |    10|
+|195   |    \genblk1[2].genblk1[4].input_vector_buffer  |register_24       |    10|
+|196   |    \genblk1[2].genblk1[5].input_vector_buffer  |register_25       |    10|
+|197   |    \genblk1[2].genblk1[6].input_vector_buffer  |register_26       |    10|
+|198   |    \genblk1[2].genblk1[7].input_vector_buffer  |register_27       |    10|
+|199   |    \genblk1[2].genblk1[8].input_vector_buffer  |register_28       |    10|
+|200   |    \genblk1[3].genblk1[0].input_vector_buffer  |register_29       |    10|
+|201   |    \genblk1[3].genblk1[1].input_vector_buffer  |register_30       |    10|
+|202   |    \genblk1[3].genblk1[2].input_vector_buffer  |register_31       |    10|
+|203   |    \genblk1[3].genblk1[3].input_vector_buffer  |register_32       |    10|
+|204   |    \genblk1[3].genblk1[4].input_vector_buffer  |register_33       |    10|
+|205   |    \genblk1[3].genblk1[5].input_vector_buffer  |register_34       |    10|
+|206   |    \genblk1[3].genblk1[6].input_vector_buffer  |register_35       |    10|
+|207   |    \genblk1[3].genblk1[7].input_vector_buffer  |register_36       |    10|
+|208   |    \genblk1[3].genblk1[8].input_vector_buffer  |register_37       |    10|
+|209   |    \genblk1[4].genblk1[0].input_vector_buffer  |register_38       |    11|
+|210   |    \genblk1[4].genblk1[1].input_vector_buffer  |register_39       |    10|
+|211   |    \genblk1[4].genblk1[2].input_vector_buffer  |register_40       |    10|
+|212   |    \genblk1[4].genblk1[3].input_vector_buffer  |register_41       |    10|
+|213   |    \genblk1[4].genblk1[4].input_vector_buffer  |register_42       |    10|
+|214   |    \genblk1[4].genblk1[5].input_vector_buffer  |register_43       |    11|
+|215   |    \genblk1[4].genblk1[6].input_vector_buffer  |register_44       |    10|
+|216   |    \genblk1[4].genblk1[7].input_vector_buffer  |register_45       |    10|
+|217   |    \genblk1[4].genblk1[8].input_vector_buffer  |register_46       |    11|
+|218   |    \genblk1[5].genblk1[0].input_vector_buffer  |register_47       |    10|
+|219   |    \genblk1[5].genblk1[1].input_vector_buffer  |register_48       |    10|
+|220   |    \genblk1[5].genblk1[2].input_vector_buffer  |register_49       |    10|
+|221   |    \genblk1[5].genblk1[3].input_vector_buffer  |register_50       |    10|
+|222   |    \genblk1[5].genblk1[4].input_vector_buffer  |register_51       |    10|
+|223   |    \genblk1[5].genblk1[5].input_vector_buffer  |register_52       |    10|
+|224   |    \genblk1[5].genblk1[6].input_vector_buffer  |register_53       |    10|
+|225   |    \genblk1[5].genblk1[7].input_vector_buffer  |register_54       |    10|
+|226   |    \genblk1[5].genblk1[8].input_vector_buffer  |register_55       |    11|
+|227   |    \genblk1[6].genblk1[0].input_vector_buffer  |register_56       |    10|
+|228   |    \genblk1[6].genblk1[1].input_vector_buffer  |register_57       |    10|
+|229   |    \genblk1[6].genblk1[2].input_vector_buffer  |register_58       |    10|
+|230   |    \genblk1[6].genblk1[3].input_vector_buffer  |register_59       |    10|
+|231   |    \genblk1[6].genblk1[4].input_vector_buffer  |register_60       |    10|
+|232   |    \genblk1[6].genblk1[5].input_vector_buffer  |register_61       |    10|
+|233   |    \genblk1[6].genblk1[6].input_vector_buffer  |register_62       |    10|
+|234   |    \genblk1[6].genblk1[7].input_vector_buffer  |register_63       |    10|
+|235   |    \genblk1[6].genblk1[8].input_vector_buffer  |register_64       |    11|
+|236   |    \genblk1[7].genblk1[0].input_vector_buffer  |register_65       |    10|
+|237   |    \genblk1[7].genblk1[1].input_vector_buffer  |register_66       |    10|
+|238   |    \genblk1[7].genblk1[2].input_vector_buffer  |register_67       |    11|
+|239   |    \genblk1[7].genblk1[3].input_vector_buffer  |register_68       |    10|
+|240   |    \genblk1[7].genblk1[4].input_vector_buffer  |register_69       |    10|
+|241   |    \genblk1[7].genblk1[5].input_vector_buffer  |register_70       |    10|
+|242   |    \genblk1[7].genblk1[6].input_vector_buffer  |register_71       |    10|
+|243   |    \genblk1[7].genblk1[7].input_vector_buffer  |register_72       |    10|
+|244   |    \genblk1[7].genblk1[8].input_vector_buffer  |register_73       |    10|
+|245   |    \genblk1[8].genblk1[0].input_vector_buffer  |register_74       |    10|
+|246   |    \genblk1[8].genblk1[1].input_vector_buffer  |register_75       |    10|
+|247   |    \genblk1[8].genblk1[2].input_vector_buffer  |register_76       |    10|
+|248   |    \genblk1[8].genblk1[3].input_vector_buffer  |register_77       |    10|
+|249   |    \genblk1[8].genblk1[4].input_vector_buffer  |register_78       |    10|
+|250   |    \genblk1[8].genblk1[5].input_vector_buffer  |register_79       |    10|
+|251   |    \genblk1[8].genblk1[6].input_vector_buffer  |register_80       |    10|
+|252   |    \genblk1[8].genblk1[7].input_vector_buffer  |register_81       |    18|
+|253   |    \genblk1[8].genblk1[8].input_vector_buffer  |register_82       |    18|
++------+------------------------------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7632 ; free virtual = 20824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1814.582 ; gain = 788.754 ; free physical = 7632 ; free virtual = 20824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1814.582 ; gain = 905.273 ; free physical = 7632 ; free virtual = 20824
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+149 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1870.609 ; gain = 852.781 ; free physical = 7589 ; free virtual = 20823
+INFO: [Coretcl 2-1174] Renamed 252 cell refs.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1966.660 ; gain = 96.051 ; free physical = 7538 ; free virtual = 20823
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:22 . Memory (MB): peak = 1966.660 ; gain = 0.000 ; free physical = 7549 ; free virtual = 20834
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:22 . Memory (MB): peak = 1966.660 ; gain = 0.000 ; free physical = 7549 ; free virtual = 20834
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  1 15:46:00 2016...

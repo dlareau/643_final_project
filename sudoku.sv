@@ -1,5 +1,5 @@
 module top(
-    input  logic        clk, reset, start,
+    input  logic        clk, reset_L,
     input  logic        valid_in,
     output logic        valid_out,
     input  logic [31:0] data_in, 
@@ -9,13 +9,10 @@ module top(
     logic [8:0][8:0][8:0] input_vector; // Could just load the solver register
     logic [8:0][8:0][3:0] output_vector;
    
-    logic reset_L;
     logic [3:0] curr_row_INPUT, curr_col_INPUT, curr_row_OUTPUT, curr_col_OUTPUT;
     logic       addr_en_INPUT, addr_en_OUTPUT, puzzle_go, puzzle_done; 
-    
-    assign reset_L = ~reset; 
 
-    solver SOLVER(
+    solver #(9, 3) SOLVER(
         .initial_vals(input_vector),
         .start(puzzle_go),
         .clock(clk),
@@ -37,8 +34,9 @@ module top(
                     .D(data_in_decoded),
                     .Q(input_vector[i][j]),
                     .en(
-                        (addr_out_INPUT / 9 == i) & // Row 
-                        (addr_out_INPUT % 9 == j)   // Col
+                        (curr_row_INPUT == i) & // Row 
+                        (curr_col_INPUT == j) & // Col
+                        (valid_in)
                     )
                 );
             end
@@ -57,34 +55,35 @@ module top(
         .valid(valid_out),
         .addr_en(addr_en_OUTPUT),
         .row(curr_row_OUTPUT),
-        .col(curr_col_OUTPUT)
-        .done(puzzle_done)       // Given by hardware
+        .col(curr_col_OUTPUT),
+        .done(puzzle_done),       // Given by hardware
+        .valid_in
     );
 
     counter #(4) CURR_ROW_INPUT(
-        .clk, .reset_L,
+        .clk, .rst_L(reset_L),
         .count(curr_row_INPUT),
-        .en(addr_en_INPUT && curr_col_INPUT == 4'd9),
-        .clear(curr_row_INPUT == 4'd9)
+        .en(addr_en_INPUT && curr_col_INPUT == 4'd8),
+        .clear(curr_row_INPUT == 4'd8 && curr_col_INPUT == 4'd8)
     );
 
     counter #(4) CURR_COL_INPUT(
         .clk, .rst_L(reset_L),
-        .clear(curr_col_INPUT == 4'd9),
+        .clear(curr_col_INPUT == 4'd8),
         .en(addr_en_INPUT),
         .count(curr_col_INPUT)
     );
 
     counter #(4) CURR_ROW_OUTPUT(
-        .clk, .reset_L,
+        .clk, .rst_L(reset_L),
         .count(curr_row_OUTPUT),
-        .en(addr_en_OUTPUT && curr_col_OUTPUT == 4'd9),
-        .clear(curr_row_OUTPUT == 4'd9)
+        .en(addr_en_OUTPUT && curr_col_OUTPUT == 4'd8),
+        .clear(curr_row_OUTPUT == 4'd8 && curr_col_OUTPUT == 4'd8)
     );
 
     counter #(4) CURR_COL_OUTPUT(
         .clk, .rst_L(reset_L),
-        .clear(curr_col_OUTPUT == 4'd9),
+        .clear(curr_col_OUTPUT == 4'd8),
         .count(curr_col_OUTPUT),
         .en(addr_en_OUTPUT)
     );
@@ -114,7 +113,7 @@ module transferInputFSM(
         done = 0;
         case(cs)
             Wait: addr_en = (valid);
-            Go:   addr_en = 1;
+            Go:   addr_en = (valid);
             Done: done = 1;
         endcase
     end
@@ -128,16 +127,17 @@ module transferOutputFSM(
     input  logic clk, rst_L,
     output logic valid,
     output logic addr_en, 
-    input  logic done,
+    input  logic done, valid_in,
     input  logic [3:0] row, col
 );
 
-    enum logic {Wait, Go} cs, ns;
+    enum logic [1:0] {Wait, Go, Done} cs, ns;
 
     always_comb begin
         case(cs)
             Wait: ns = (done) ? Go : Wait;
-            Go:   ns = (row == 4'd9 && col == 4'd9) ? Wait : Go;
+            Go:   ns = (row == 4'd8 && col == 4'd8) ? Done : Go;
+            Done: ns = (valid_in) ? Wait : Done;
         endcase
     end
 
@@ -152,7 +152,10 @@ module transferOutputFSM(
             Go: begin
                 addr_en = 1;
                 valid = 1;
-            end 
+            end
+            Done: begin
+                valid = 0;
+            end
         endcase
     end
 
@@ -167,26 +170,34 @@ module solver #(parameter WIDTH = 9, N = 3) (
     input logic start, clock, reset_L,
     //output logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] final_vals,
     output logic [WIDTH-1:0][WIDTH-1:0][3:0] human_readable_vals,
-    output logic done // ******POPULATE THIS
-    //output logic fail
+    output logic done
     );
 
     logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] options, new_options;
     logic [WIDTH-1:0][WIDTH-1:0][WIDTH-1:0] final_rows, final_cols, final_sectors, final_vals;
-    logic [WIDTH-1:0][WIDTH-1:0] row_vals, col_vals, sector_vals, overall_fail;
+    logic [WIDTH-1:0][WIDTH-1:0] row_vals, col_vals, sector_vals, overall_fail, overall_done;
     logic fail;
 
     assign fail = |overall_fail;
+    assign done = &overall_done || fail;
+    
     generate
         genvar row, col;
         for(row = 0; row < WIDTH; row++) begin: row_square
             for(col = 0; col < WIDTH; col++) begin: col_square
                 bcd_encoder bcde(final_vals[row][col], human_readable_vals[row][col]);
-                square #(WIDTH, N) s(.row(row_vals[row]), .col(col_vals[col]), .sector(sector_vals[(row/N)*N + (col/N)]),
+                square #(WIDTH, N) s(
+                       .row(row_vals[row]), 
+                       .col(col_vals[col]), 
+                       .sector(sector_vals[(row/N)*N + (col/N)]),
                        .det_val(new_options[row][col]),
                        .initial_val(initial_vals[row][col]), .clock, .reset_L,
-                       .load_initial(start), .options_out(options[row][col]),
-                       .final_val(final_vals[row][col]), .fail(overall_fail[row][col]));
+                       .load_initial(start), 
+                       .options_out(options[row][col]),
+                       .final_val(final_vals[row][col]), 
+                       .fail(overall_fail[row][col]),
+                       .done(overall_done[row][col])
+                );
             end
         end
 
@@ -281,7 +292,7 @@ module square #(parameter WIDTH = 9, N = 3) (
     input logic [WIDTH-1:0] row, col, sector, det_val, initial_val,
     input logic clock, reset_L, load_initial,
     output [WIDTH-1:0] options_out, final_val,
-    output logic fail);
+    output logic fail, done);
 
     logic [WIDTH-1:0] internal_det_val, load_val, options;//, options_before_latch;
     logic valid, load;
@@ -297,6 +308,7 @@ module square #(parameter WIDTH = 9, N = 3) (
 
     assign all_ones = &options;
     assign fail = all_ones && (final_val == 0);
+    assign done = (final_val != 0);
     assign options_out = (final_val == 0) ? (row | col | sector) : {WIDTH{1'b1}};
 
 endmodule: square
@@ -308,7 +320,7 @@ module one_hot_detector #(parameter WIDTH = 9) (
 
     assign is_one_hot = (in && !(in & (in-1)));
 
-endmodule
+endmodule: one_hot_detector
 
 module register #(parameter WIDTH = 8) (
    output logic [WIDTH-1:0] Q,
@@ -324,17 +336,18 @@ module register #(parameter WIDTH = 8) (
          Q <= D;
    end
 
-endmodule
+endmodule: register
 
 module counter #(parameter WIDTH = 8) (
-    output logic [WIDTH-1] count,
-    input  logic           clk, rst_L, clear, en
+    output logic [WIDTH-1:0] count,
+    input  logic             clk, rst_L, clear, en
 );
 
     always_ff @(posedge clk, negedge rst_L) begin
         if (~rst_L)     count <= 0;
         else if (clear) count <= 0;
         else if (en)    count <= count + 1;
+    end
  
 endmodule: counter
 
@@ -386,35 +399,68 @@ endmodule: bcd_decoder
 /*
 module solver_TB;
 
-    logic [8:0][8:0][8:0] initial_vals, final_vals;
-    logic [8:0][8:0][3:0] human_readable_vals;
-    logic start, clock, reset_L, fail;
-  
-    //top #(9, 3) DUT(.*);
-    input_puzzle INPUT(
-        .clka(),
-        .wea(1'b0),
-        .addra(),
-        .dina(), 
-        .douta(), 
-        .clkb(),
-        .web(1'b0),
-        .addrb(),
-        .dinb(),
-        .doutb()
-    );
+    logic        clk, reset, valid_in, valid_out;
+    logic [31:0] data_in, data_out;
 
-  initial begin
-    initial_vals[0] = 81'b000000000_000000010_001000000_000000000_000001000_000000000_010000000_000000000_000000000;
-    initial_vals[1] = 81'b000000000_000000001_000000000_001000000_000000000_000000000_100000000_000001000_000000000;
-    initial_vals[2] = 81'b000001000_000000000_010000000_000000010_000000000_000000000_000000100_000010000_000000000;
-    initial_vals[3] = 81'b000000000_000000000_100000000_000000000_000010000_000000000_000000000_000000000_000000000;
-    initial_vals[4] = 81'b000010000_000000000_000000000_010000000_001000000_000001000_000000000_000000000_000100000;
-    initial_vals[5] = 81'b000000000_000000000_000000000_000000000_000000001_000000000_000001000_000000000_000000000;
-    initial_vals[6] = 81'b000000000_001000000_000001000_000000000_000000000_100000000_000100000_000000000_010000000;
-    initial_vals[7] = 81'b000000000_100000000_000100000_000000000_000000000_001000000_000000000_000000100_000000000;
-    initial_vals[8] = 81'b000000000_000000000_000000100_000000000_000000010_000000000_001000000_000000001_000000000;
-  end
+    logic [80:0][31:0] data_stream_in, data_stream_out;
+    
+    top DUT(.*);
 
+    initial begin
+        clk = 1;
+        forever #5 clk = ~clk;
+    end
+
+    logic [6:0] i;
+
+    assign data_in = data_stream_in[i];
+    
+    initial begin
+
+        data_stream_in = {32'd0, 32'd2, 32'd7, 32'd0, 32'd4, 32'd0, 32'd8, 32'd0, 32'd0,
+                          32'd0, 32'd1, 32'd0, 32'd7, 32'd0, 32'd0, 32'd9, 32'd4, 32'd0,
+                          32'd4, 32'd0, 32'd8, 32'd2, 32'd0, 32'd0, 32'd3, 32'd5, 32'd0,
+                          32'd0, 32'd0, 32'd9, 32'd0, 32'd5, 32'd0, 32'd0, 32'd0, 32'd0,
+                          32'd5, 32'd0, 32'd0, 32'd8, 32'd7, 32'd4, 32'd0, 32'd0, 32'd6,
+                          32'd0, 32'd0, 32'd0, 32'd0, 32'd1, 32'd0, 32'd4, 32'd0, 32'd0,
+                          32'd0, 32'd7, 32'd4, 32'd0, 32'd0, 32'd9, 32'd6, 32'd0, 32'd8,
+                          32'd0, 32'd9, 32'd6, 32'd0, 32'd0, 32'd7, 32'd0, 32'd3, 32'd0,
+                          32'd0, 32'd0, 32'd3, 32'd0, 32'd2, 32'd0, 32'd7, 32'd1, 32'd0};
+
+
+        valid_in = 0;
+        i = 0;
+        
+        reset = 0;
+        @(posedge clk);
+        reset <= 1;
+        @(posedge clk);
+        reset <= 0;
+        @(posedge clk);
+        @(posedge clk);
+        valid_in <= 1;
+        
+        for (; i < 81; i++) begin
+            @(posedge clk);
+        end
+
+        i <= 0;
+        valid_in <= 0;
+        
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        
+        for (i = 0; i < 81; i++) begin
+            @(posedge clk);
+        end
+
+        @(posedge clk);
+        @(posedge clk);
+        
+        $finish;
+    end
+    
 endmodule: solver_TB
 */

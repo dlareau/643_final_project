@@ -1,0 +1,206 @@
+#include <xparameters.h>
+#include <xaxicdma.h>
+#include <xil_cache.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cfloat>
+#include <cmath>
+#include <limits.h>
+#include "main.h"
+#include "xtime_l.h"
+#include <cstdbool.h>
+
+#define CDMA_INPUT_ID XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID
+#define CDMA_INPUT_BASE XPAR_HIER_BRAM_0_AXI_CDMA_0_BASEADDR
+
+#define CDMA_OUTPUT_ID XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID
+#define CDMA_OUTPUT_BASE XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR
+
+#define HW_ADDR 0x4040_0000
+
+#define SOLVER_ID XPAR_SOLVER_0_DEVICE_ID
+
+#define CLOCKS_PER_SEC (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2)
+//CPU 32-bit timer (SCUTIMER) clocked at half the CPU frequency
+unsigned int * const TIMER_LOAD_PTR = (unsigned int *)XPAR_PS7_SCUTIMER_0_BASEADDR;
+unsigned int * const TIMER_PTR = XPAR_PS7_SCUTIMER_0_BASEADDR + (unsigned int *)0x04;
+unsigned int * const TIMER_CONFIG_PTR = XPAR_PS7_SCUTIMER_0_BASEADDR + (unsigned int *)0x08;
+
+//globals
+int input_vector[WIDTH][WIDTH]; //input of hardware solver
+int output_vector[WIDTH][WIDTH]; //output of hardware solver
+bool input_ready; //ready signal to fpga
+bool output_ready; //fpga signal that it's done solving
+int zeroes[WIDTH][WIDTH]; //matrix of zeroes for resetting
+int sw_in[WIDTH][WIDTH]; //input of software solver
+int sw_out[WIDTH][WIDTH]; //output of software solver
+
+//devices and configuration pointers for CDMA IPs used to transfer data to/from DRAM and BRAM
+XAxiCdma		 cdma_dev_input;
+XAxiCdma_Config *cdma_config_input;
+XAxiCdma		 cdma_dev_output;
+XAxiCdma_Config *cdma_config_output;
+
+void initialize(int &error);
+int is_available(int puzzle[WIDTH][WIDTH], int row, int col, int num);
+int fill_sudoku(int puzzle[WIDTH][WIDTH], int row, int col);
+void sudoku_solver();
+
+int main(){
+  int error_count = 0;
+  XTime tStart, tEnd;
+
+  initialize(error_count); // initialize timer and IPs
+
+  if (error_count) return XST_FAILURE;
+  
+  //initializes matrix of zeroes
+  for (int i = 0; i < WIDTH; i++){
+	for (int j = 0; j < WIDTH; j++){
+	  zeroes[i][j] = 0;
+	}
+  }
+  
+  //initializes puzzle
+  input_vector = {{0,6,1,0,0,7,0,0,3},
+                  {0,9,2,0,0,3,0,0,0},
+                  {0,0,0,0,0,0,0,0,0},
+                  {0,0,8,5,3,0,0,0,0},
+                  {0,0,0,0,0,0,5,0,4},
+                  {5,0,0,0,0,8,0,0,0},
+                  {0,4,0,0,0,0,0,0,1},
+                  {0,0,0,1,6,0,8,0,0},
+                  {6,0,0,0,0,0,0,0,0}};
+				  
+  memcpy(sw_in, input_vector, WIDTH*sizeof(int));
+  
+  input_ready = 0;
+  int ret_val = fill_sudoku(sw_in, 0, 0);
+
+  Xil_DCacheFlush(); // Flush the initialized matrices from the CPU cache to DRAM
+  // The CDMA IPs are connected through incoherent ports to main memory
+
+  XTime_GetTime(&tStart);
+  sudoku_solver();
+  XTime_GetTime(&tEnd);
+  printf("Output took %llu clock cycles.\n", 2*(tEnd - tStart));
+  printf("Output took %.2f ms.\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000));
+
+  if (ret_val){
+	sw_out = sw_in;
+	for (int i = 0; i < WIDTH; i++){
+      for (int j = 0; j < WIDTH; j++){
+  	    // Check result of HW vs SW results
+  	    if (output_vector[i][j] != sw_out[i][j]){
+		  printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+    	  error_count++;
+	    }
+      }
+    }
+  }
+  
+
+  if (error_count)
+    printf("TEST FAIL: %d Results do not match!\n", error_count);
+  else
+    printf("Test passed!\n");
+
+  return error_count;
+}
+
+//hardware solution
+void sudoku_solver(){
+  Xil_DCacheFlush();
+  Xil_DCacheInvalidate();
+  XAxiCdma_SimpleTransfer(&cdma_dev_input, (u32)&(input_vector[0]), 
+                          (u32)(HW_ADDR), WIDTH*WIDTH*sizeof(int),
+						  NULL, NULL);
+  while (XAxiCdma_IsBusy(&cdma_dev_input));
+
+  Xil_DCacheFlush();
+
+  Xil_DCacheInvalidate();
+
+  // Issue Start signal to the hardware solver
+  input_ready = 1;
+  // Spin check the Done signal from the solver
+  while (!output_ready);
+  input_ready = 0;
+  // Transfer the solution back out
+  XAxiCdma_SimpleTransfer(&cdma_dev_output, (u32)(HW_ADDR),
+                          (u32)&(output_vector[0]), WIDTH*WIDTH*sizeof(int),
+						  NULL, NULL);
+  while (XAxiCdma_IsBusy(&cdma_dev_output));
+
+  Xil_DCacheFlush();
+
+  Xil_DCacheInvalidate();	
+}
+
+//software solution
+int is_available(int puzzle[WIDTH][WIDTH], int row, int col, int num){
+    int row_start = (row/N) * N;
+    int col_start = (col/N) * N;
+
+    for(int i=0; i<9; ++i)
+    {
+        if (puzzle[row][i] == num) return 0;
+        if (puzzle[i][col] == num) return 0;
+        if (puzzle[row_start + (i%N)][col_start + (i/N)] == num) return 0;
+    }
+    return 1;
+}
+
+int fill_sudoku(int puzzle[WIDTH][WIDTH], int row, int col){
+    int i;
+    if(row<WIDTH && col<WIDTH)
+    {
+        if(puzzle[row][col] != 0)
+        {
+            if((col+1)<WIDTH) return fill_sudoku(puzzle, row, col+1);
+            else if((row+1)<WIDTH) return fill_sudoku(puzzle, row+1, 0);
+            else return 1;
+        }
+        else
+        {
+            for(i=0; i<WIDTH; ++i)
+            {
+                if(is_available(puzzle, row, col, i+1))
+                {
+                    puzzle[row][col] = i+1;
+                    if((col+1)<WIDTH)
+                    {
+                        if(fill_sudoku(puzzle, row, col +1)) return 1;
+                        else puzzle[row][col] = 0;
+                    }
+                    else if((row+1)<WIDTH)
+                    {
+                        if(fill_sudoku(puzzle, row+1, 0)) return 1;
+                        else puzzle[row][col] = 0;
+                    }
+                    else return 1;
+                }
+            }
+        }
+        return 0;
+    }
+    else return 1;
+}
+
+void initialize(int &error){
+    *TIMER_CONFIG_PTR = 0x00000003;
+	*TIMER_PTR = UINT_MAX; //count down from max amount
+
+	cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+	status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+	if(status !=XST_SUCCESS){
+		printf("ERROR: CDMA INPUT Setup Failed\n");
+		error++;
+	}
+	cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+	status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+	if(status !=XST_SUCCESS){
+		printf("ERROR: CDMA OUTPUT Setup Failed\n");
+		error++;
+	}
+}
