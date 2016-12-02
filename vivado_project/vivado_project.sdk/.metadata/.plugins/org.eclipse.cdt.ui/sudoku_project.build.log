@@ -1,6 +1,6 @@
-17:23:55 **** Incremental Build of configuration Debug for project sudoku_project ****
+17:39:21 **** Incremental Build of configuration Debug for project sudoku_project ****
 make all 
 make: Nothing to be done for `all'.
 
-17:23:55 Build Finished (took 230ms)
+17:39:21 Build Finished (took 172ms)
 

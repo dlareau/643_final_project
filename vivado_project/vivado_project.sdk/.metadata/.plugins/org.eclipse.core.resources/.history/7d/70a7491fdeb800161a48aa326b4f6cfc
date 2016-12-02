@@ -43,13 +43,11 @@ void sudoku_solver();
 void initialize(int &error);
 
 int main(){
-  printf("hi this is main\n");
+  printf("hi this is main");
   int error_count = 0;
   XTime tStart, tEnd;
   
   initialize(error_count);
-
-  printf("done init\n");
 
   //initializes matrix of zeroes
   for (int i = 0; i < WIDTH; i++){
@@ -177,7 +175,7 @@ void initialize(int &error){
     *TIMER_CONFIG_PTR = 0x00000003;
 	*TIMER_PTR = UINT_MAX; //count down from max amount
 
-	dma_config = XAxiDma_LookupConfig(XPAR_AXI_DMA_0_DEVICE_ID);
+	dma_config = XAxiDma_LookupConfig(HW_ADDR);
 	int status = XAxiDma_CfgInitialize(&dma_dev,dma_config);
 	if(status !=XST_SUCCESS){
 		printf("ERROR: DMA Setup Failed\n");

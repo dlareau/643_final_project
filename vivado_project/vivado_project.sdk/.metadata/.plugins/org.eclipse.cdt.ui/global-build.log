@@ -1626,3 +1626,120 @@ arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
 17:23:55 **** Incremental Build of configuration Debug for project sudoku_project ****
 make all 
 make: Nothing to be done for `all'.
+17:24:11 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:24:43 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78376	   2704	  25284	 106364	  19f7c	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+17:25:05 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:29:20 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78376	   2704	  25284	 106364	  19f7c	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+17:29:23 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:29:28 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:29:59 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:30:54 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:31:22 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:32:05 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:33:32 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78384	   2704	  25284	 106372	  19f84	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+17:33:33 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:33:36 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:36:37 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:36:46 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:37:25 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:38:46 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:39:18 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78384	   2704	  25284	 106372	  19f84	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+17:39:21 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.

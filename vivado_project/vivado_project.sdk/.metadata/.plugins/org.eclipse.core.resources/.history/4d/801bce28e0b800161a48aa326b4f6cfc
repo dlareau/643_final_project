@@ -49,7 +49,7 @@ int main(){
   
   initialize(error_count);
 
-  printf("done init\n");
+  printf("done init");
 
   //initializes matrix of zeroes
   for (int i = 0; i < WIDTH; i++){
