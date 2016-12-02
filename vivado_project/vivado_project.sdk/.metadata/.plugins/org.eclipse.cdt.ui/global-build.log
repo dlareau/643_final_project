@@ -1,0 +1,1628 @@
+16:03:57 **** Build of project sudoku_project_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+16:04:21 **** Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19388	   1152	  22572	  43112	   a868	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+16:04:39 **** Auto Build of project sudoku_project_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+16:05:02 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:06:29 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:07:09 **** Auto Build of project sudoku_project_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+16:07:32 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:07:35 **** Clean-only build of configuration Debug for project sudoku_project ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  ./src/main.d  sudoku_project.elf.size  sudoku_project.elf
+' '
+16:07:36 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:2:22: fatal error: xaxicdma.h: No such file or directory
+ #include <xaxicdma.h>
+                      ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+16:10:50 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxicdma.h:341:25: fatal error: xaxicdma_bd.h: No such file or directory
+ #include "xaxicdma_bd.h"
+                         ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+16:12:38 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:11:22: fatal error: cstdbool.h: No such file or directory
+ #include <cstdbool.h>
+                      ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+16:12:45 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:11:22: fatal error: cstdbool.h: No such file or directory
+ #include <cstdbool.h>
+                      ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+16:12:50 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:11:22: fatal error: cstdbool.h: No such file or directory
+ #include <cstdbool.h>
+                      ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+16:13:02 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:18:17: error: invalid suffix "_0000" on integer constant
+ #define HW_ADDR 0x4040_0000
+                 ^
+../src/main.cpp:116:33: note: in expansion of macro 'HW_ADDR'
+                           (u32)(HW_ADDR), WIDTH*WIDTH*sizeof(int),
+                                 ^
+../src/main.cpp:18:17: error: invalid suffix "_0000" on integer constant
+ #define HW_ADDR 0x4040_0000
+                 ^
+../src/main.cpp:130:51: note: in expansion of macro 'HW_ADDR'
+   XAxiCdma_SimpleTransfer(&cdma_dev_output, (u32)(HW_ADDR),
+                                                   ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:73:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:65:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp:90:9: error: invalid array assignment
+  sw_out = sw_in;
+         ^
+../src/main.cpp:95:53: error: 'hw_out' was not declared in this scope
+     printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+                                                     ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:12:23: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_INPUT_ID XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID
+                       ^
+../src/main.cpp:194:44: note: in expansion of macro 'CDMA_INPUT_ID'
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:195:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:195:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:15:24: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_OUTPUT_ID XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID
+                        ^
+../src/main.cpp:200:45: note: in expansion of macro 'CDMA_OUTPUT_ID'
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:16:26: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_OUTPUT_BASE XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR
+                          ^
+../src/main.cpp:201:70: note: in expansion of macro 'CDMA_OUTPUT_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:13:03 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:18:17: error: invalid suffix "_0000" on integer constant
+ #define HW_ADDR 0x4040_0000
+                 ^
+../src/main.cpp:116:33: note: in expansion of macro 'HW_ADDR'
+                           (u32)(HW_ADDR), WIDTH*WIDTH*sizeof(int),
+                                 ^
+../src/main.cpp:18:17: error: invalid suffix "_0000" on integer constant
+ #define HW_ADDR 0x4040_0000
+                 ^
+../src/main.cpp:130:51: note: in expansion of macro 'HW_ADDR'
+   XAxiCdma_SimpleTransfer(&cdma_dev_output, (u32)(HW_ADDR),
+                                                   ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:73:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:65:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp:90:9: error: invalid array assignment
+  sw_out = sw_in;
+         ^
+../src/main.cpp:95:53: error: 'hw_out' was not declared in this scope
+     printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+                                                     ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:12:23: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_INPUT_ID XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID
+                       ^
+../src/main.cpp:194:44: note: in expansion of macro 'CDMA_INPUT_ID'
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:195:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:195:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:15:24: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_OUTPUT_ID XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID
+                        ^
+../src/main.cpp:200:45: note: in expansion of macro 'CDMA_OUTPUT_ID'
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:16:26: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_OUTPUT_BASE XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR
+                          ^
+../src/main.cpp:201:70: note: in expansion of macro 'CDMA_OUTPUT_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:13:34 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:73:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:65:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp:90:9: error: invalid array assignment
+  sw_out = sw_in;
+         ^
+../src/main.cpp:95:53: error: 'hw_out' was not declared in this scope
+     printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+                                                     ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:12:23: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_INPUT_ID XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID
+                       ^
+../src/main.cpp:194:44: note: in expansion of macro 'CDMA_INPUT_ID'
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:195:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:195:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:15:24: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_OUTPUT_ID XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID
+                        ^
+../src/main.cpp:200:45: note: in expansion of macro 'CDMA_OUTPUT_ID'
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:16:26: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_OUTPUT_BASE XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR
+                          ^
+../src/main.cpp:201:70: note: in expansion of macro 'CDMA_OUTPUT_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:13:35 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:73:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:65:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp:90:9: error: invalid array assignment
+  sw_out = sw_in;
+         ^
+../src/main.cpp:95:53: error: 'hw_out' was not declared in this scope
+     printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+                                                     ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:12:23: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_INPUT_ID XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID
+                       ^
+../src/main.cpp:194:44: note: in expansion of macro 'CDMA_INPUT_ID'
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:195:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:195:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:15:24: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_OUTPUT_ID XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID
+                        ^
+../src/main.cpp:200:45: note: in expansion of macro 'CDMA_OUTPUT_ID'
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:16:26: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_OUTPUT_BASE XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR
+                          ^
+../src/main.cpp:201:70: note: in expansion of macro 'CDMA_OUTPUT_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:14:13 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:67:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:59:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp:84:9: error: invalid array assignment
+  sw_out = sw_in;
+         ^
+../src/main.cpp:89:53: error: 'hw_out' was not declared in this scope
+     printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+                                                     ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:188:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:189:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:189:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:194:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:195:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:14:13 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:67:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:59:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp:84:9: error: invalid array assignment
+  sw_out = sw_in;
+         ^
+../src/main.cpp:89:53: error: 'hw_out' was not declared in this scope
+     printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+                                                     ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:188:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:189:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:189:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:194:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:195:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:16:20 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:67:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:59:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp:88:53: error: 'hw_out' was not declared in this scope
+     printf("In square %d,%d:\tHW: %d\tSW: %d\n",i,j,hw_out[i][j],sw_out[i][j]);
+                                                     ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:187:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:188:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:188:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:193:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:194:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:16:47 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:67:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:59:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:187:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:188:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:188:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:193:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:194:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:16:49 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:67:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:59:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:187:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:188:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:188:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:193:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:194:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:16:59 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:67:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:59:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:187:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:188:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:188:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:193:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:194:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:17:02 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:67:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:59:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:187:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:188:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:188:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:193:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:194:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:17:26 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:66:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:58:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:186:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:187:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:187:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:192:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:193:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:17:27 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:66:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:58:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:186:44: error: 'CDMA_INPUT_ID' was not declared in this scope
+  cdma_config_input = XAxiCdma_LookupConfig(CDMA_INPUT_ID);
+                                            ^
+../src/main.cpp:187:2: error: 'status' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+  ^
+../src/main.cpp:187:68: error: 'CDMA_INPUT_BASE_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_input,cdma_config_input,CDMA_INPUT_BASE_BASE);
+                                                                    ^
+../src/main.cpp:192:45: error: 'CDMA_OUTPUT_ID' was not declared in this scope
+  cdma_config_output = XAxiCdma_LookupConfig(CDMA_OUTPUT_ID);
+                                             ^
+../src/main.cpp:193:70: error: 'CDMA_OUTPUT_BASE' was not declared in this scope
+  status = XAxiCdma_CfgInitialize(&cdma_dev_output,cdma_config_output,CDMA_OUTPUT_BASE);
+                                                                      ^
+make: *** [src/main.o] Error 1
+16:20:45 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:61:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:53:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+make: *** [src/main.o] Error 1
+16:21:23 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:61:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+                   {6,0,0,0,0,0,0,0,0}};
+                                      ^
+../src/main.cpp:53:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},
+                ^
+make: *** [src/main.o] Error 1
+16:22:34 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:53:198: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   input_vector = {{0,6,1,0,0,7,0,0,3},{0,9,2,0,0,3,0,0,0},{0,0,0,0,0,0,0,0,0},{0,0,8,5,3,0,0,0,0},{0,0,0,0,0,0,5,0,4},{5,0,0,0,0,8,0,0,0},{0,4,0,0,0,0,0,0,1},{0,0,0,1,6,0,8,0,0},{6,0,0,0,0,0,0,0,0}};
+                                                                                                                                                                                                      ^
+../src/main.cpp:53:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},{0,9,2,0,0,3,0,0,0},{0,0,0,0,0,0,0,0,0},{0,0,8,5,3,0,0,0,0},{0,0,0,0,0,0,5,0,4},{5,0,0,0,0,8,0,0,0},{0,4,0,0,0,0,0,0,1},{0,0,0,1,6,0,8,0,0},{6,0,0,0,0,0,0,0,0}};
+                ^
+make: *** [src/main.o] Error 1
+16:22:34 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:53:198: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   input_vector = {{0,6,1,0,0,7,0,0,3},{0,9,2,0,0,3,0,0,0},{0,0,0,0,0,0,0,0,0},{0,0,8,5,3,0,0,0,0},{0,0,0,0,0,0,5,0,4},{5,0,0,0,0,8,0,0,0},{0,4,0,0,0,0,0,0,1},{0,0,0,1,6,0,8,0,0},{6,0,0,0,0,0,0,0,0}};
+                                                                                                                                                                                                      ^
+../src/main.cpp:53:16: error: assigning to an array from an initializer list
+   input_vector = {{0,6,1,0,0,7,0,0,3},{0,9,2,0,0,3,0,0,0},{0,0,0,0,0,0,0,0,0},{0,0,8,5,3,0,0,0,0},{0,0,0,0,0,0,5,0,4},{5,0,0,0,0,8,0,0,0},{0,4,0,0,0,0,0,0,1},{0,0,0,1,6,0,8,0,0},{6,0,0,0,0,0,0,0,0}};
+                ^
+make: *** [src/main.o] Error 1
+16:24:05 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:53:19: error: expected identifier before '[' token
+   input_vector = [[0,6,1,0,0,7,0,0,3],
+                   ^
+../src/main.cpp:53:38: error: expected ']' before ',' token
+   input_vector = [[0,6,1,0,0,7,0,0,3],
+                                      ^
+../src/main.cpp: In lambda function:
+../src/main.cpp:53:38: error: expected '{' before ',' token
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:53:38: warning: lambda expressions only available with -std=c++11 or -std=gnu++11
+../src/main.cpp:53:16: error: incompatible types in assignment of 'main()::<lambda()>' to 'int [9][9]'
+   input_vector = [[0,6,1,0,0,7,0,0,3],
+                ^
+../src/main.cpp:54:20: error: expected identifier before numeric constant
+                   [0,9,2,0,0,3,0,0,0],
+                    ^
+../src/main.cpp:54:21: error: expected ']' before ',' token
+                   [0,9,2,0,0,3,0,0,0],
+                     ^
+../src/main.cpp: In lambda function:
+../src/main.cpp:54:21: error: expected '{' before ',' token
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:54:21: warning: lambda expressions only available with -std=c++11 or -std=gnu++11
+make: *** [src/main.o] Error 1
+16:24:08 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:53:19: error: expected identifier before '[' token
+   input_vector = [[0,6,1,0,0,7,0,0,3],
+                   ^
+../src/main.cpp:53:38: error: expected ']' before ',' token
+   input_vector = [[0,6,1,0,0,7,0,0,3],
+                                      ^
+../src/main.cpp: In lambda function:
+../src/main.cpp:53:38: error: expected '{' before ',' token
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:53:38: warning: lambda expressions only available with -std=c++11 or -std=gnu++11
+../src/main.cpp:53:16: error: incompatible types in assignment of 'main()::<lambda()>' to 'int [9][9]'
+   input_vector = [[0,6,1,0,0,7,0,0,3],
+                ^
+../src/main.cpp:54:20: error: expected identifier before numeric constant
+                   [0,9,2,0,0,3,0,0,0],
+                    ^
+../src/main.cpp:54:21: error: expected ']' before ',' token
+                   [0,9,2,0,0,3,0,0,0],
+                     ^
+../src/main.cpp: In lambda function:
+../src/main.cpp:54:21: error: expected '{' before ',' token
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:54:21: warning: lambda expressions only available with -std=c++11 or -std=gnu++11
+make: *** [src/main.o] Error 1
+16:26:21 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:26:22 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:33:01 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:33:03 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:33:24 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:36:08 **** Auto Build of project sudoku_project_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axicdma_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axicdma_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axicdma"
+xaxicdma.c: In function 'XAxiCdma_SelectKeyHole':
+xaxicdma.c:305:7: error: 'XPAR_AXICDMA_0_M_AXI_MAX_BURST_LEN' undeclared (first use in this function)
+   if (XPAR_AXICDMA_0_M_AXI_MAX_BURST_LEN == 16) {
+       ^
+xaxicdma.c:305:7: note: each undeclared identifier is reported only once for each function it appears in
+xaxicdma_g.c:50:3: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID,
+   ^
+xaxicdma_g.c:51:3: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_BASEADDR' undeclared here (not in a function)
+   XPAR_HIER_BRAM_0_AXI_CDMA_0_BASEADDR,
+   ^
+xaxicdma_g.c:52:3: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_INCLUDE_DRE' undeclared here (not in a function)
+   XPAR_HIER_BRAM_0_AXI_CDMA_0_INCLUDE_DRE,
+   ^
+xaxicdma_g.c:53:3: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_USE_DATAMOVER_LITE' undeclared here (not in a function)
+   XPAR_HIER_BRAM_0_AXI_CDMA_0_USE_DATAMOVER_LITE,
+   ^
+xaxicdma_g.c:54:3: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_M_AXI_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_HIER_BRAM_0_AXI_CDMA_0_M_AXI_DATA_WIDTH,
+   ^
+xaxicdma_g.c:55:3: error: 'XPAR_HIER_BRAM_0_AXI_CDMA_0_M_AXI_MAX_BURST_LEN' undeclared here (not in a function)
+   XPAR_HIER_BRAM_0_AXI_CDMA_0_M_AXI_MAX_BURST_LEN
+   ^
+xaxicdma_g.c:58:3: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID,
+   ^
+xaxicdma_g.c:59:3: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR' undeclared here (not in a function)
+   XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR,
+   ^
+xaxicdma_g.c:60:3: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_INCLUDE_DRE' undeclared here (not in a function)
+   XPAR_HIER_BRAM_1_AXI_CDMA_0_INCLUDE_DRE,
+   ^
+xaxicdma_g.c:61:3: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_USE_DATAMOVER_LITE' undeclared here (not in a function)
+   XPAR_HIER_BRAM_1_AXI_CDMA_0_USE_DATAMOVER_LITE,
+   ^
+xaxicdma_g.c:62:3: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_M_AXI_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_HIER_BRAM_1_AXI_CDMA_0_M_AXI_DATA_WIDTH,
+   ^
+xaxicdma_g.c:63:3: error: 'XPAR_HIER_BRAM_1_AXI_CDMA_0_M_AXI_MAX_BURST_LEN' undeclared here (not in a function)
+   XPAR_HIER_BRAM_1_AXI_CDMA_0_M_AXI_MAX_BURST_LEN
+   ^
+xaxicdma_g.c:66:3: error: 'XPAR_HIER_BRAM_2_AXI_CDMA_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_HIER_BRAM_2_AXI_CDMA_0_DEVICE_ID,
+   ^
+xaxicdma_g.c:67:3: error: 'XPAR_HIER_BRAM_2_AXI_CDMA_0_BASEADDR' undeclared here (not in a function)
+   XPAR_HIER_BRAM_2_AXI_CDMA_0_BASEADDR,
+   ^
+xaxicdma_g.c:68:3: error: 'XPAR_HIER_BRAM_2_AXI_CDMA_0_INCLUDE_DRE' undeclared here (not in a function)
+   XPAR_HIER_BRAM_2_AXI_CDMA_0_INCLUDE_DRE,
+   ^
+xaxicdma_g.c:69:3: error: 'XPAR_HIER_BRAM_2_AXI_CDMA_0_USE_DATAMOVER_LITE' undeclared here (not in a function)
+   XPAR_HIER_BRAM_2_AXI_CDMA_0_USE_DATAMOVER_LITE,
+   ^
+xaxicdma_g.c:70:3: error: 'XPAR_HIER_BRAM_2_AXI_CDMA_0_M_AXI_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_HIER_BRAM_2_AXI_CDMA_0_M_AXI_DATA_WIDTH,
+   ^
+xaxicdma_g.c:71:3: error: 'XPAR_HIER_BRAM_2_AXI_CDMA_0_M_AXI_MAX_BURST_LEN' undeclared here (not in a function)
+   XPAR_HIER_BRAM_2_AXI_CDMA_0_M_AXI_MAX_BURST_LEN
+   ^
+xaxicdma_sinit.c: In function 'XAxiCdma_LookupConfig':
+xaxicdma_sinit.c:75:18: error: 'XPAR_XAXICDMA_NUM_INSTANCES' undeclared (first use in this function)
+  for (i = 0; i < XPAR_XAXICDMA_NUM_INSTANCES; i++) {
+                  ^
+xaxicdma_sinit.c:75:18: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [libs] Error 1
+make: *** [ps7_cortexa9_0/libsrc/axicdma_v3_0/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+make: Target `all' not remade because of errors.
+16:36:32 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:36:38 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:36:43 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `sudoku_solver()':
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:101: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:102: undefined reference to `XAxiCdma_IsBusy'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:116: undefined reference to `XAxiCdma_SimpleTransfer'
+D:\Documents\CMU\16-17\Fall\18-643\643_final_project\vivado_project\vivado_project.sdk\sudoku_project\Debug/../src/main.cpp:117: undefined reference to `XAxiCdma_IsBusy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sudoku_project.elf] Error 1
+16:39:01 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:39:1: error: 'XAxiCdma' does not name a type
+ XAxiCdma   cdma_dev_input;
+ ^
+../src/main.cpp:40:1: error: 'XAxiCdma_Config' does not name a type
+ XAxiCdma_Config *cdma_config_input;
+ ^
+../src/main.cpp:41:1: error: 'XAxiCdma' does not name a type
+ XAxiCdma   cdma_dev_output;
+ ^
+../src/main.cpp:42:1: error: 'XAxiCdma_Config' does not name a type
+ XAxiCdma_Config *cdma_config_output;
+ ^
+../src/main.cpp: In function 'void sudoku_solver()':
+../src/main.cpp:99:28: error: 'cdma_dev_input' was not declared in this scope
+   XAxiCdma_SimpleTransfer(&cdma_dev_input, (u32)&(input_vector[0]), 
+                            ^
+../src/main.cpp:101:19: error: 'XAxiCdma_SimpleTransfer' was not declared in this scope
+         NULL, NULL);
+                   ^
+../src/main.cpp:102:41: error: 'XAxiCdma_IsBusy' was not declared in this scope
+   while (XAxiCdma_IsBusy(&cdma_dev_input));
+                                         ^
+../src/main.cpp:114:28: error: 'cdma_dev_output' was not declared in this scope
+   XAxiCdma_SimpleTransfer(&cdma_dev_output, (u32)(HW_ADDR),
+                            ^
+../src/main.cpp:117:42: error: 'XAxiCdma_IsBusy' was not declared in this scope
+   while (XAxiCdma_IsBusy(&cdma_dev_output));
+                                          ^
+make: *** [src/main.o] Error 1
+16:39:45 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void sudoku_solver()':
+../src/main.cpp:101:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:102:40: error: 'XAxiDma_IsBusy' was not declared in this scope
+   while (XAxiDma_IsBusy(&cdma_dev_input));
+                                        ^
+../src/main.cpp:116:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:117:41: error: 'XAxiDma_IsBusy' was not declared in this scope
+   while (XAxiDma_IsBusy(&cdma_dev_output));
+                                         ^
+make: *** [src/main.o] Error 1
+16:39:46 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void sudoku_solver()':
+../src/main.cpp:101:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:102:40: error: 'XAxiDma_IsBusy' was not declared in this scope
+   while (XAxiDma_IsBusy(&cdma_dev_input));
+                                        ^
+../src/main.cpp:116:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:117:41: error: 'XAxiDma_IsBusy' was not declared in this scope
+   while (XAxiDma_IsBusy(&cdma_dev_output));
+                                         ^
+make: *** [src/main.o] Error 1
+16:40:22 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void sudoku_solver()':
+../src/main.cpp:101:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:102:38: error: too few arguments to function 'u32 XAxiDma_Busy(XAxiDma*, int)'
+   while (XAxiDma_Busy(&cdma_dev_input));
+                                      ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:722:5: note: declared here
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^
+../src/main.cpp:116:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:117:39: error: too few arguments to function 'u32 XAxiDma_Busy(XAxiDma*, int)'
+   while (XAxiDma_Busy(&cdma_dev_output));
+                                       ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:722:5: note: declared here
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^
+make: *** [src/main.o] Error 1
+16:40:22 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void sudoku_solver()':
+../src/main.cpp:101:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:102:38: error: too few arguments to function 'u32 XAxiDma_Busy(XAxiDma*, int)'
+   while (XAxiDma_Busy(&cdma_dev_input));
+                                      ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:722:5: note: declared here
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^
+../src/main.cpp:116:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:117:39: error: too few arguments to function 'u32 XAxiDma_Busy(XAxiDma*, int)'
+   while (XAxiDma_Busy(&cdma_dev_output));
+                                       ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:722:5: note: declared here
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^
+make: *** [src/main.o] Error 1
+16:46:09 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void sudoku_solver()':
+../src/main.cpp:101:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:119:19: error: too many arguments to function 'int XAxiDma_SimpleTransfer(XAxiDma*, u32, u32, int)'
+         NULL, NULL);
+                   ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:723:5: note: declared here
+ int XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,
+     ^
+../src/main.cpp:120:39: error: too few arguments to function 'u32 XAxiDma_Busy(XAxiDma*, int)'
+   while (XAxiDma_Busy(&cdma_dev_output),XAXIDMA_DMA_TO_DEVICE);
+                                       ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:722:5: note: declared here
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^
+make: *** [src/main.o] Error 1
+16:51:01 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void sudoku_solver()':
+../src/main.cpp:118:39: error: too few arguments to function 'u32 XAxiDma_Busy(XAxiDma*, int)'
+   while (XAxiDma_Busy(&cdma_dev_output),XAXIDMA_DMA_TO_DEVICE);
+                                       ^
+In file included from ../src/main.cpp:2:0:
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:722:5: note: declared here
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^
+make: *** [src/main.o] Error 1
+16:52:26 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78076	   2648	  26956	 107680	  1a4a0	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+16:52:29 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:53:04 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:53:46 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:54:26 **** Auto Build of project sudoku_project_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+16:54:48 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78076	   2648	  26956	 107680	  1a4a0	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+16:55:14 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:56:02 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:57:59 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:58:04 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+16:59:31 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:00:30 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:01:13 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:03:37 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:42:1: error: expected initializer before 'int'
+ int is_available(int puzzle[WIDTH][WIDTH], int row, int col, int num);
+ ^
+make: *** [src/main.o] Error 1
+17:03:46 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78076	   2648	  25292	 106016	  19e20	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+17:04:11 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+17:15:06 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:179:2: error: 'status' was not declared in this scope
+  status = XAxiDma_CfgInitialize(&cdma_dev,dma_config);
+  ^
+../src/main.cpp:179:34: error: 'cdma_dev' was not declared in this scope
+  status = XAxiDma_CfgInitialize(&cdma_dev,dma_config);
+                                  ^
+make: *** [src/main.o] Error 1
+17:16:12 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:179:38: error: 'cdma_dev' was not declared in this scope
+  int status = XAxiDma_CfgInitialize(&cdma_dev,dma_config);
+                                      ^
+make: *** [src/main.o] Error 1
+17:16:19 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78376	   2704	  25284	 106364	  19f7c	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+17:23:55 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.

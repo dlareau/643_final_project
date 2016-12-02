@@ -44,7 +44,6 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set rc [catch {
@@ -53,24 +52,24 @@ set rc [catch {
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.cache/wt [current_project]
-  set_property parent.project_path /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.xpr [current_project]
+  set_property webtalk.parent_dir D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.cache/wt [current_project]
+  set_property parent.project_path D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.xpr [current_project]
   set_property ip_repo_paths {
-  /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.cache/ip
-  /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project
+  d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.cache/ip
+  D:/Documents/CMU/16-17/Fall/18-643/643_final_project
 } [current_project]
-  set_property ip_output_repo /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.cache/ip [current_project]
-  add_files -quiet /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.runs/synth_1/design_1_wrapper.dcp
-  read_xdc -ref design_1_processing_system7_0_0 -cells inst /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-  read_xdc -ref design_1_axi_dma_0_0 -cells U0 /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc
-  set_property processing_order EARLY [get_files /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_1_rst_processing_system7_0_100M_0 /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc
-  set_property processing_order EARLY [get_files /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
-  read_xdc -ref design_1_rst_processing_system7_0_100M_0 /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc
-  set_property processing_order EARLY [get_files /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
-  read_xdc -ref design_1_axi_dma_0_0 -cells U0 /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc
-  set_property processing_order LATE [get_files /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
+  set_property ip_output_repo d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.cache/ip [current_project]
+  add_files -quiet D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.runs/synth_1/design_1_wrapper.dcp
+  read_xdc -ref design_1_processing_system7_0_0 -cells inst d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+  read_xdc -ref design_1_axi_dma_0_0 -cells U0 d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc
+  set_property processing_order EARLY [get_files d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_1_rst_processing_system7_0_100M_0 d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc
+  set_property processing_order EARLY [get_files d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
+  read_xdc -ref design_1_rst_processing_system7_0_100M_0 d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc
+  set_property processing_order EARLY [get_files d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
+  read_xdc -ref design_1_axi_dma_0_0 -cells U0 d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc
+  set_property processing_order LATE [get_files d:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
   link_design -top design_1_wrapper -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]

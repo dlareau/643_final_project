@@ -2,11 +2,11 @@
 <GenRun Id="top_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1480625030">
   <File Type="VDS-TIMING-PB" Name="top_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_0_timing_summary_synth.rpt"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/top_0_synth_1/constrs_in.xml"/>
   <File Type="RDS-DCP" Name="top_0.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/top_0_synth_1/sources.xml"/>
   <File Type="RDS-UTIL-PB" Name="top_0_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="top_0_utilization_synth.rpt"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/top_0_synth_1/constrs_in.xml"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/top_0_synth_1/sources.xml"/>
   <File Type="RDS-RDS" Name="top_0.vds"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/top_0_synth_1/top_0_synth_1.psg"/>
   <File Type="PA-TCL" Name="top_0.tcl"/>
@@ -38,9 +38,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

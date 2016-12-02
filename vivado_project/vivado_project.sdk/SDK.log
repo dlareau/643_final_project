@@ -1,176 +1,92 @@
-16:05:21 INFO  : Processing command line option -hwspec /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf.
-16:05:23 INFO  : Launching XSDB server: xsdb -n -s /afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
-16:05:27 INFO  : XSDB server has started successfully.
-16:18:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:18:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00001024278301" && level==0} -index 1' command is executed.
-16:18:33 INFO  : 'fpga -state' command is executed.
-16:18:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:18:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0' command is executed.
-16:18:41 INFO  : Mermory regions for PS have been updated.
-16:18:41 INFO  : Sourcing of '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
-16:18:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0' command is executed.
-16:18:43 INFO  : 'ps7_init' command is executed.
-16:18:43 INFO  : 'ps7_post_config' command is executed.
-16:18:43 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0
-memmap -addr 1077936128 -size 65536 -flags 3
-memmap -addr 4160782336 -size 4096 -flags 3
-memmap -addr 4160786432 -size 4096 -flags 3
-memmap -addr 4160790528 -size 4096 -flags 3
-memmap -addr 4160794624 -size 4096 -flags 3
-memmap -addr 4169138176 -size 1048576 -flags 3
-memmap -addr 1048576 -size 535822336 -flags 3
-memmap -addr 4160774144 -size 4096 -flags 3
-memmap -addr 4160778240 -size 256 -flags 3
-memmap -addr 4160765952 -size 4096 -flags 3
-memmap -addr 4160761856 -size 4096 -flags 3
-memmap -addr 3758141440 -size 4096 -flags 3
-memmap -addr 4176478720 -size 256 -flags 3
-memmap -addr 3758137344 -size 4096 -flags 3
-memmap -addr 4170186752 -size 1048576 -flags 3
-memmap -addr 4176482304 -size 4096 -flags 3
-memmap -addr 3760193536 -size 4096 -flags 3
-memmap -addr 4176486400 -size 4096 -flags 3
-memmap -addr 4160798720 -size 4096 -flags 3
-memmap -addr 4176486400 -size 4096 -flags 3
-memmap -addr 4169732096 -size 4096 -flags 3
-memmap -addr 3758149632 -size 4096 -flags 3
-memmap -addr 4227858432 -size 16777216 -flags 3
-memmap -addr 0 -size 196608 -flags 3
-memmap -addr 4294901760 -size 65024 -flags 3
-memmap -addr 4176478208 -size 253 -flags 3
-memmap -addr 4176482304 -size 4096 -flags 3
-memmap -addr 4176479744 -size 32 -flags 3
-memmap -addr 4176479776 -size 224 -flags 3
-memmap -addr 3759144960 -size 4096 -flags 3
-memmap -addr 4160749568 -size 4096 -flags 3
-memmap -addr 4160753664 -size 4096 -flags 3
-memmap -addr 3758100480 -size 4096 -flags 3
-memmap -addr 3758104576 -size 4096 -flags 3
-memmap -addr 4160778496 -size 33 -flags 3
-source /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
-targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0
-ps7_init
-ps7_post_config
-----------------End of Script----------------
+15:59:49 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:59:50 INFO  : Processing command line option -hwspec D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf.
+15:59:53 INFO  : XSDB server has started successfully.
+16:06:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:06:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+16:06:09 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:06:37 INFO  : ps7_init is completed.
+16:06:37 INFO  : ps7_post_config is completed.
+16:06:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:47:27 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+16:47:27 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+16:52:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+16:52:59 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:53:10 INFO  : ps7_init is completed.
+16:53:10 INFO  : ps7_post_config is completed.
+16:53:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:53:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:53:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:55:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:55:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:56:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:58:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:59:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+16:59:24 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:00:46 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
 
-16:18:43 INFO  : Memory regions updated for context APU
-16:19:05 INFO  : Disconnected from the channel tcfchan#1.
-16:19:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:19:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00001024278301" && level==0} -index 1' command is executed.
-16:19:05 INFO  : 'fpga -state' command is executed.
-16:19:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:19:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0' command is executed.
-16:19:18 INFO  : Mermory regions for PS have been updated.
-16:19:18 INFO  : Sourcing of '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
-16:19:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0' command is executed.
-16:19:20 INFO  : 'ps7_init' command is executed.
-16:19:20 INFO  : 'ps7_post_config' command is executed.
-16:19:20 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0
-memmap -addr 1077936128 -size 65536 -flags 3
-memmap -addr 4160782336 -size 4096 -flags 3
-memmap -addr 4160786432 -size 4096 -flags 3
-memmap -addr 4160790528 -size 4096 -flags 3
-memmap -addr 4160794624 -size 4096 -flags 3
-memmap -addr 4169138176 -size 1048576 -flags 3
-memmap -addr 1048576 -size 535822336 -flags 3
-memmap -addr 4160774144 -size 4096 -flags 3
-memmap -addr 4160778240 -size 256 -flags 3
-memmap -addr 4160765952 -size 4096 -flags 3
-memmap -addr 4160761856 -size 4096 -flags 3
-memmap -addr 3758141440 -size 4096 -flags 3
-memmap -addr 4176478720 -size 256 -flags 3
-memmap -addr 3758137344 -size 4096 -flags 3
-memmap -addr 4170186752 -size 1048576 -flags 3
-memmap -addr 4176482304 -size 4096 -flags 3
-memmap -addr 3760193536 -size 4096 -flags 3
-memmap -addr 4176486400 -size 4096 -flags 3
-memmap -addr 4160798720 -size 4096 -flags 3
-memmap -addr 4176486400 -size 4096 -flags 3
-memmap -addr 4169732096 -size 4096 -flags 3
-memmap -addr 3758149632 -size 4096 -flags 3
-memmap -addr 4227858432 -size 16777216 -flags 3
-memmap -addr 0 -size 196608 -flags 3
-memmap -addr 4294901760 -size 65024 -flags 3
-memmap -addr 4176478208 -size 253 -flags 3
-memmap -addr 4176482304 -size 4096 -flags 3
-memmap -addr 4176479744 -size 32 -flags 3
-memmap -addr 4176479776 -size 224 -flags 3
-memmap -addr 3759144960 -size 4096 -flags 3
-memmap -addr 4160749568 -size 4096 -flags 3
-memmap -addr 4160753664 -size 4096 -flags 3
-memmap -addr 3758100480 -size 4096 -flags 3
-memmap -addr 3758104576 -size 4096 -flags 3
-memmap -addr 4160778496 -size 33 -flags 3
-source /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
-targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0
-ps7_init
-ps7_post_config
-----------------End of Script----------------
 
-16:19:20 INFO  : Memory regions updated for context APU
-16:20:24 INFO  : Disconnected from the channel tcfchan#2.
-16:20:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:20:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00001024278301" && level==0} -index 1' command is executed.
-16:20:24 INFO  : 'fpga -state' command is executed.
-16:20:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:20:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00001024278301" && level==0} -index 1' command is executed.
-16:21:06 INFO  : FPGA configured successfully with bitstream "/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
-16:21:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:21:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00001024278301" && level==0} -index 1' command is executed.
-16:21:17 INFO  : 'fpga -state' command is executed.
-16:21:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-16:21:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0' command is executed.
-16:21:21 INFO  : Mermory regions for PS have been updated.
-16:21:21 INFO  : Sourcing of '/afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
-16:21:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0' command is executed.
-16:21:22 INFO  : 'ps7_init' command is executed.
-16:21:23 INFO  : 'ps7_post_config' command is executed.
-16:21:23 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0
-memmap -addr 1077936128 -size 65536 -flags 3
-memmap -addr 4160782336 -size 4096 -flags 3
-memmap -addr 4160786432 -size 4096 -flags 3
-memmap -addr 4160790528 -size 4096 -flags 3
-memmap -addr 4160794624 -size 4096 -flags 3
-memmap -addr 4169138176 -size 1048576 -flags 3
-memmap -addr 1048576 -size 535822336 -flags 3
-memmap -addr 4160774144 -size 4096 -flags 3
-memmap -addr 4160778240 -size 256 -flags 3
-memmap -addr 4160765952 -size 4096 -flags 3
-memmap -addr 4160761856 -size 4096 -flags 3
-memmap -addr 3758141440 -size 4096 -flags 3
-memmap -addr 4176478720 -size 256 -flags 3
-memmap -addr 3758137344 -size 4096 -flags 3
-memmap -addr 4170186752 -size 1048576 -flags 3
-memmap -addr 4176482304 -size 4096 -flags 3
-memmap -addr 3760193536 -size 4096 -flags 3
-memmap -addr 4176486400 -size 4096 -flags 3
-memmap -addr 4160798720 -size 4096 -flags 3
-memmap -addr 4176486400 -size 4096 -flags 3
-memmap -addr 4169732096 -size 4096 -flags 3
-memmap -addr 3758149632 -size 4096 -flags 3
-memmap -addr 4227858432 -size 16777216 -flags 3
-memmap -addr 0 -size 196608 -flags 3
-memmap -addr 4294901760 -size 65024 -flags 3
-memmap -addr 4176478208 -size 253 -flags 3
-memmap -addr 4176482304 -size 4096 -flags 3
-memmap -addr 4176479744 -size 32 -flags 3
-memmap -addr 4176479776 -size 224 -flags 3
-memmap -addr 3759144960 -size 4096 -flags 3
-memmap -addr 4160749568 -size 4096 -flags 3
-memmap -addr 4160753664 -size 4096 -flags 3
-memmap -addr 3758100480 -size 4096 -flags 3
-memmap -addr 3758104576 -size 4096 -flags 3
-memmap -addr 4160778496 -size 33 -flags 3
-source /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
-targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00001024278301"} -index 0
-ps7_init
-ps7_post_config
-----------------End of Script----------------
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8000008
 
-16:21:23 INFO  : Memory regions updated for context APU
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1073)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:01:17 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8000008
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1073)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:04:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:04:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+17:04:07 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:04:15 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8000008
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1073)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:22:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+17:22:52 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:23:56 INFO  : ps7_init is completed.
+17:23:56 INFO  : ps7_post_config is completed.
+17:23:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:24:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
