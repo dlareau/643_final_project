@@ -119,3 +119,6 @@ Cannot write to target
 17:45:36 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
 17:45:36 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
 17:46:19 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:03:12 INFO  : Launching XSDB server: xsdb -n -s /afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:03:13 INFO  : Processing command line option -hwspec /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf.
+13:03:16 INFO  : XSDB server has started successfully.

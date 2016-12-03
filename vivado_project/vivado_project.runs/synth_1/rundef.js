@@ -4,13 +4,17 @@
 // Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH variable below, before executing this script"
+exit
+
 var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "C:/Xilinx/SDK/2015.2/bin;C:/Xilinx/Vivado/2015.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2015.2/bin;";
+  PathVal = "/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/SDK/2015.2/bin:/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/Vivado/2015.2/ids_lite/ISE/bin/lin64;/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/Vivado/2015.2/ids_lite/ISE/lib/lin64;/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/Vivado/2015.2/bin;";
 } else {
-  PathVal = "C:/Xilinx/SDK/2015.2/bin;C:/Xilinx/Vivado/2015.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2015.2/bin;" + PathVal;
+  PathVal = "/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/SDK/2015.2/bin:/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/Vivado/2015.2/ids_lite/ISE/bin/lin64;/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/Vivado/2015.2/ids_lite/ISE/lib/lin64;/afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/Vivado/2015.2/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;

@@ -1,10 +1,10 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Thu Dec 01 17:23:13 2016
-| Host         : styx running 64-bit major release  (build 9200)
+--------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Sat Dec  3 13:02:06 2016
+| Host         : eris.andrew.local.cmu.edu running 64-bit Red Hat Enterprise Linux Server release 7.2 (Maipo)
 | Command      : report_drc
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 
 Report DRC
 
@@ -41,7 +41,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-78 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/counter[12], design_1_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/data_concat_tlast, design_1_i/axi_dma_0/U0/INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR/mm2s_cmnd_data[23], design_1_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/queue_dout2_new[90:0], design_1_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/queue_dout_new[90:0].
+26 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/data_concat_tlast, design_1_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/queue_dout2_new[90:0], design_1_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/queue_dout_new[90:0].
 Related violations: <none>
 
 
