@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date             : Sat Dec  3 13:02:10 2016
-| Host             : eris.andrew.local.cmu.edu running 64-bit Red Hat Enterprise Linux Server release 7.2 (Maipo)
+| Tool Version     : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date             : Sat Dec 03 14:03:49 2016
+| Host             : styx running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb
 | Design           : design_1_wrapper
 | Device           : xc7z020clg484-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.753 |
-| Dynamic (W)              | 1.594 |
+| Total On-Chip Power (W)  | 1.752 |
+| Dynamic (W)              | 1.593 |
 | Device Static (W)        | 0.159 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 64.8  |
@@ -49,20 +49,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.021 |        3 |       --- |             --- |
-| Slice Logic              |     0.012 |    20849 |       --- |             --- |
-|   LUT as Logic           |     0.012 |    11928 |     53200 |           22.42 |
+| Clocks                   |     0.020 |        3 |       --- |             --- |
+| Slice Logic              |     0.012 |    20847 |       --- |             --- |
+|   LUT as Logic           |     0.012 |    11924 |     53200 |           22.41 |
 |   CARRY4                 |    <0.001 |       88 |     13300 |            0.66 |
 |   Register               |    <0.001 |     6893 |    106400 |            6.48 |
 |   F7/F8 Muxes            |    <0.001 |       67 |     53200 |            0.13 |
 |   LUT as Shift Register  |    <0.001 |      224 |     17400 |            1.29 |
 |   LUT as Distributed RAM |    <0.001 |       18 |     17400 |            0.10 |
 |   Others                 |     0.000 |      493 |       --- |             --- |
-| Signals                  |     0.024 |    17137 |       --- |             --- |
+| Signals                  |     0.024 |    17154 |       --- |             --- |
 | Block RAM                |     0.003 |        2 |       140 |            1.43 |
 | PS7                      |     1.533 |        1 |       --- |             --- |
 | Static Power             |     0.159 |          |           |                 |
-| Total                    |     1.753 |          |           |                 |
+| Total                    |     1.752 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.076 |       0.060 |      0.015 |
+| Vccint    |       1.000 |     0.075 |       0.059 |      0.015 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,8 +148,8 @@ Table of Contents
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                                                                                                                                                     | Power (W) |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                                                                                                                                                                                         |     1.594 |
-|   design_1_i                                                                                                                                                                                                                             |     1.594 |
+| design_1_wrapper                                                                                                                                                                                                                         |     1.593 |
+|   design_1_i                                                                                                                                                                                                                             |     1.593 |
 |     axi_dma_0                                                                                                                                                                                                                            |     0.016 |
 |       U0                                                                                                                                                                                                                                 |     0.016 |
 |         GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_7_0_5 |    <0.001 |
@@ -599,8 +599,8 @@ Table of Contents
 |             r1                                                                                                                                                                                                                           |    <0.001 |
 |           row_square[5].col_square[2].s                                                                                                                                                                                                  |    <0.001 |
 |             r1                                                                                                                                                                                                                           |    <0.001 |
-|           row_square[5].col_square[3].s                                                                                                                                                                                                  |     0.002 |
-|             r1                                                                                                                                                                                                                           |     0.002 |
+|           row_square[5].col_square[3].s                                                                                                                                                                                                  |     0.003 |
+|             r1                                                                                                                                                                                                                           |     0.003 |
 |           row_square[5].col_square[4].s                                                                                                                                                                                                  |     0.002 |
 |             r1                                                                                                                                                                                                                           |     0.002 |
 |           row_square[5].col_square[5].s                                                                                                                                                                                                  |     0.001 |
@@ -613,8 +613,8 @@ Table of Contents
 |             r1                                                                                                                                                                                                                           |    <0.001 |
 |           row_square[6].col_square[0].s                                                                                                                                                                                                  |    <0.001 |
 |             r1                                                                                                                                                                                                                           |    <0.001 |
-|           row_square[6].col_square[1].s                                                                                                                                                                                                  |    <0.001 |
-|             r1                                                                                                                                                                                                                           |    <0.001 |
+|           row_square[6].col_square[1].s                                                                                                                                                                                                  |     0.001 |
+|             r1                                                                                                                                                                                                                           |     0.001 |
 |           row_square[6].col_square[2].s                                                                                                                                                                                                  |    <0.001 |
 |             r1                                                                                                                                                                                                                           |    <0.001 |
 |           row_square[6].col_square[3].s                                                                                                                                                                                                  |    <0.001 |

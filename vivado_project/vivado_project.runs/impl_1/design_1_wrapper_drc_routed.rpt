@@ -1,10 +1,10 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Sat Dec  3 13:02:06 2016
-| Host         : eris.andrew.local.cmu.edu running 64-bit Red Hat Enterprise Linux Server release 7.2 (Maipo)
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Sat Dec 03 14:03:30 2016
+| Host         : styx running 64-bit major release  (build 9200)
 | Command      : report_drc
---------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 Report DRC
 

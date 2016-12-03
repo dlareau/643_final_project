@@ -1,0 +1,6 @@
+13:30:59 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:31:02 INFO  : XSDB server has started successfully.
+13:31:19 ERROR : The Hardware Project referenced by this BSP (sudoku_project_bsp) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
+13:31:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:31:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+13:31:53 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"

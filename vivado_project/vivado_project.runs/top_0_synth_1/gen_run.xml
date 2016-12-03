@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="top_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1480625030">
-  <File Type="RDS-PROPCONSTRS" Name="top_0_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="top_0.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/top_0_synth_1/top_0_synth_1.psg"/>
+  <File Type="PA-TCL" Name="top_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="top_0.vds"/>
   <File Type="RDS-UTIL" Name="top_0_utilization_synth.rpt"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_0_timing_summary_synth.rpt"/>

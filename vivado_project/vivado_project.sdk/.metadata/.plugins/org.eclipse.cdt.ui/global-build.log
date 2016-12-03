@@ -1841,3 +1841,252 @@ Finished building: ../src/main.cpp
 Building target: sudoku_project.elf
 Invoking: ARM g++ linker
 arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+14:27:33 **** Auto Build of project sudoku_project_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+14:27:56 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78384	   2704	  25284	 106372	  19f84	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+14:28:35 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+14:29:08 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+14:31:11 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78384	   2704	  25284	 106372	  19f84	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+14:31:21 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
+15:03:19 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:25:1: warning: multi-line comment [-Wcomment]
+ //#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+ ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:87:3: error: 'Status' was not declared in this scope
+   Status = TxSetup(&dma_dev);
+   ^
+In file included from ../src/main.cpp:2:0:
+../src/main.cpp: In function 'int RxSetup(XAxiDma*)':
+../src/main.cpp:246:33: error: 'AxiDma' was not declared in this scope
+  RxRingPtr = XAxiDma_GetRxRing(&AxiDma);
+                                 ^
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:561:8: note: in definition of macro 'XAxiDma_GetRxRing'
+    (&((InstancePtr)->RxBdRing[0]))
+        ^
+../src/main.cpp:294:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (Index = 0; Index < FreeBdCount; Index++) {
+                        ^
+In file included from ../src/main.cpp:2:0:
+../src/main.cpp: In function 'int TxSetup(XAxiDma*)':
+../src/main.cpp:369:33: error: 'AxiDma' was not declared in this scope
+  TxRingPtr = XAxiDma_GetTxRing(&AxiDma);
+                                 ^
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:540:8: note: in definition of macro 'XAxiDma_GetTxRing'
+    (&((InstancePtr)->TxBdRing))
+        ^
+make: *** [src/main.o] Error 1
+15:03:52 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:25:1: warning: multi-line comment [-Wcomment]
+ //#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+ ^
+In file included from ../src/main.cpp:2:0:
+../src/main.cpp: In function 'int RxSetup(XAxiDma*)':
+../src/main.cpp:247:33: error: 'AxiDma' was not declared in this scope
+  RxRingPtr = XAxiDma_GetRxRing(&AxiDma);
+                                 ^
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:561:8: note: in definition of macro 'XAxiDma_GetRxRing'
+    (&((InstancePtr)->RxBdRing[0]))
+        ^
+../src/main.cpp:295:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (Index = 0; Index < FreeBdCount; Index++) {
+                        ^
+In file included from ../src/main.cpp:2:0:
+../src/main.cpp: In function 'int TxSetup(XAxiDma*)':
+../src/main.cpp:370:33: error: 'AxiDma' was not declared in this scope
+  TxRingPtr = XAxiDma_GetTxRing(&AxiDma);
+                                 ^
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:540:8: note: in definition of macro 'XAxiDma_GetTxRing'
+    (&((InstancePtr)->TxBdRing))
+        ^
+make: *** [src/main.o] Error 1
+15:04:12 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:25:1: warning: multi-line comment [-Wcomment]
+ //#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+ ^
+In file included from ../src/main.cpp:2:0:
+../src/main.cpp: In function 'int RxSetup(XAxiDma*)':
+../src/main.cpp:247:33: error: 'axi_dev' was not declared in this scope
+  RxRingPtr = XAxiDma_GetRxRing(&axi_dev);
+                                 ^
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:561:8: note: in definition of macro 'XAxiDma_GetRxRing'
+    (&((InstancePtr)->RxBdRing[0]))
+        ^
+../src/main.cpp:295:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (Index = 0; Index < FreeBdCount; Index++) {
+                        ^
+In file included from ../src/main.cpp:2:0:
+../src/main.cpp: In function 'int TxSetup(XAxiDma*)':
+../src/main.cpp:370:33: error: 'axi_dev' was not declared in this scope
+  TxRingPtr = XAxiDma_GetTxRing(&axi_dev);
+                                 ^
+../../sudoku_project_bsp/ps7_cortexa9_0/include/xaxidma.h:540:8: note: in definition of macro 'XAxiDma_GetTxRing'
+    (&((InstancePtr)->TxBdRing))
+        ^
+make: *** [src/main.o] Error 1
+15:04:39 **** Auto Build of configuration Debug for project sudoku_project ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sudoku_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:25:1: warning: multi-line comment [-Wcomment]
+ //#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+ ^
+../src/main.cpp: In function 'int RxSetup(XAxiDma*)':
+../src/main.cpp:295:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (Index = 0; Index < FreeBdCount; Index++) {
+                        ^
+'Finished building: ../src/main.cpp'
+' '
+'Building target: sudoku_project.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sudoku_project_bsp/ps7_cortexa9_0/lib -o "sudoku_project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: sudoku_project.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sudoku_project.elf  |tee "sudoku_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80932	   2704	  25284	 108920	  1a978	sudoku_project.elf
+'Finished building: sudoku_project.elf.size'
+' '
+15:05:32 **** Incremental Build of configuration Debug for project sudoku_project ****
+make all 
+make: Nothing to be done for `all'.
