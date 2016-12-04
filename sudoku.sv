@@ -1,6 +1,6 @@
 module top(
     input  logic        clk, reset_L,
-    input  logic        valid_in,
+    input  logic        valid_in, dma_ready,
     output logic        valid_out,
     input  logic [31:0] data_in, 
     output logic [31:0] data_out
@@ -56,7 +56,7 @@ module top(
         .addr_en(addr_en_OUTPUT),
         .row(curr_row_OUTPUT),
         .col(curr_col_OUTPUT),
-        .done(puzzle_done),       // Given by hardware
+        .done(puzzle_done && dma_ready),       // Given by hardware
         .valid_in
     );
 
@@ -396,10 +396,9 @@ module bcd_decoder(
 
 endmodule: bcd_decoder
 
-/*
 module solver_TB;
 
-    logic        clk, reset, valid_in, valid_out;
+    logic        clk, reset_L, valid_in, valid_out, dma_ready;
     logic [31:0] data_in, data_out;
 
     logic [80:0][31:0] data_stream_in, data_stream_out;
@@ -427,15 +426,15 @@ module solver_TB;
                           32'd0, 32'd9, 32'd6, 32'd0, 32'd0, 32'd7, 32'd0, 32'd3, 32'd0,
                           32'd0, 32'd0, 32'd3, 32'd0, 32'd2, 32'd0, 32'd7, 32'd1, 32'd0};
 
-
+        dma_ready = 0;
         valid_in = 0;
         i = 0;
         
-        reset = 0;
+        reset_L = 1;
         @(posedge clk);
-        reset <= 1;
+        reset_L <= 0;
         @(posedge clk);
-        reset <= 0;
+        reset_L <= 1;
         @(posedge clk);
         @(posedge clk);
         valid_in <= 1;
@@ -451,6 +450,11 @@ module solver_TB;
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+
+        dma_ready <= 1;
         
         for (i = 0; i < 81; i++) begin
             @(posedge clk);
@@ -458,9 +462,10 @@ module solver_TB;
 
         @(posedge clk);
         @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
         
         $finish;
     end
     
 endmodule: solver_TB
-*/
