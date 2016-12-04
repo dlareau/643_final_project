@@ -119,3 +119,65 @@ Cannot write to target
 17:45:36 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
 17:45:36 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
 17:46:19 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:03:12 INFO  : Launching XSDB server: xsdb -n -s /afs/ece/support/xilinx/xilinx.release/Vivado-2015.2/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:03:13 INFO  : Processing command line option -hwspec /afs/ece.cmu.edu/usr/jlareau/Private/18643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf.
+13:03:16 INFO  : XSDB server has started successfully.
+13:28:26 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:28:28 INFO  : XSDB server has started successfully.
+13:28:28 INFO  : Processing command line option -hwspec D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf.
+13:28:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480788952262,  Project:1480631071703
+13:28:35 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:29:07 INFO  : Copied contents of D:/Documents/CMU/16-17/Fall/18-643/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+13:29:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:29:23 INFO  : 
+13:29:24 INFO  : Updating hardware inferred compiler options for sudoku_project.
+13:29:24 INFO  : Clearing existing target manager status.
+13:29:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:29:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+13:29:45 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:30:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:30:40 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:27:25 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:27:27 INFO  : Processing command line option -hwspec D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf.
+14:27:28 INFO  : XSDB server has started successfully.
+14:27:30 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+14:27:38 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480791890905,  Project:1480789248173
+14:27:38 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_2' is different from D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf.
+14:27:56 INFO  : Copied contents of D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_2\system.hdf.
+14:28:03 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:28:04 INFO  : Clearing existing target manager status.
+14:28:04 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+14:28:04 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+14:28:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:28:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+14:28:33 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:28:43 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:29:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+14:29:03 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:29:10 INFO  : ps7_init is completed.
+14:29:10 INFO  : ps7_post_config is completed.
+14:29:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:31:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:31:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:05:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:05:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248774439" && level==0} -index 1' command is executed.
+15:05:27 INFO  : FPGA configured successfully with bitstream "D:/Documents/CMU/16-17/Fall/18-643/final_project/643_final_project/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:05:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:05:34 INFO  : Processor reset is completed for ps7_cortexa9_0

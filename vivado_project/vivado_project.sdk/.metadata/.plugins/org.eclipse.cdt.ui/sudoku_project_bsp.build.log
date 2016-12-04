@@ -1,4 +1,4 @@
-16:54:26 **** Auto Build of project sudoku_project_bsp ****
+14:27:33 **** Auto Build of project sudoku_project_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/axidma_v8_1/src"
 make -C ps7_cortexa9_0/libsrc/axidma_v8_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -87,5 +87,5 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm
 "Compiling xadcps"
 'Finished building libraries'
 
-16:54:48 Build Finished (took 22s.157ms)
+14:27:56 Build Finished (took 22s.529ms)
 

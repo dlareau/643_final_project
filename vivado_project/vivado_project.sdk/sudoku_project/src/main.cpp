@@ -9,7 +9,38 @@
 #include "main.h"
 #include "xtime_l.h"
 
-#define HW_ADDR 0x40400000
+#define DMA_DEV_ID		XPAR_AXIDMA_0_DEVICE_ID
+
+#ifdef XPAR_V6DDR_0_S_AXI_BASEADDR
+#define DDR_BASE_ADDR		XPAR_V6DDR_0_S_AXI_BASEADDR
+#elif XPAR_S6DDR_0_S0_AXI_BASEADDR
+#define DDR_BASE_ADDR		XPAR_S6DDR_0_S0_AXI_BASEADDR
+#elif XPAR_AXI_7SDDR_0_S_AXI_BASEADDR
+#define DDR_BASE_ADDR		XPAR_AXI_7SDDR_0_S_AXI_BASEADDR
+#elif XPAR_MIG7SERIES_0_BASEADDR
+#define DDR_BASE_ADDR		XPAR_MIG7SERIES_0_BASEADDR
+#endif
+
+#ifndef DDR_BASE_ADDR
+//#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+			DEFAULT SET TO 0x01000000
+#define MEM_BASE_ADDR		0x00100000
+#else
+#define MEM_BASE_ADDR		(DDR_BASE_ADDR + 0x1000000)
+#endif
+
+#define TX_BD_SPACE_BASE	(MEM_BASE_ADDR)
+#define TX_BD_SPACE_HIGH	(MEM_BASE_ADDR + 0x00000FFF)
+#define RX_BD_SPACE_BASE	(MEM_BASE_ADDR + 0x00001000)
+#define RX_BD_SPACE_HIGH	(MEM_BASE_ADDR + 0x00001FFF)
+#define TX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00300000)
+#define RX_BUFFER_HIGH		(MEM_BASE_ADDR + 0x004FFFFF)
+
+
+#define MAX_PKT_LEN		0x20
+
+#define TEST_START_VALUE	0xC
 
 #define CLOCKS_PER_SEC (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2)
 //CPU 32-bit timer (SCUTIMER) clocked at half the CPU frequency
@@ -40,16 +71,29 @@ XAxiDma_Config *dma_config;
 int is_available(int puzzle[WIDTH][WIDTH], int row, int col, int num);
 int fill_sudoku(int puzzle[WIDTH][WIDTH], int row, int col);
 void sudoku_solver();
+static int RxSetup(XAxiDma * AxiDmaInstPtr);
+static int TxSetup(XAxiDma * AxiDmaInstPtr);
 void initialize(int &error);
 
 int main(){
   printf("hi this is main\n");
   int error_count = 0;
+  int Status;
   XTime tStart, tEnd;
   
   initialize(error_count);
 
   printf("done init\n");
+
+  Status = TxSetup(&dma_dev);
+  	if (Status != XST_SUCCESS) {
+  		return XST_FAILURE;
+  	}
+
+  	Status = RxSetup(&dma_dev);
+  	if (Status != XST_SUCCESS) {
+  		return XST_FAILURE;
+  	}
 
   //initializes matrix of zeroes
   for (int i = 0; i < WIDTH; i++){
@@ -98,8 +142,8 @@ void sudoku_solver(){
   Xil_DCacheFlush();
   Xil_DCacheInvalidate();
   XAxiDma_SimpleTransfer(&dma_dev, (u32)&(input_vector[0]),
-                          WIDTH*WIDTH*sizeof(int),XAXIDMA_DEVICE_TO_DMA);
-  while (XAxiDma_Busy(&dma_dev,XAXIDMA_DEVICE_TO_DMA));
+                          WIDTH*WIDTH*sizeof(int),XAXIDMA_DMA_TO_DEVICE);
+  while (XAxiDma_Busy(&dma_dev,XAXIDMA_DMA_TO_DEVICE));
 
   //XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, u32 BuffAddr, u32 Length,int Direction);
   //u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
@@ -115,8 +159,8 @@ void sudoku_solver(){
   input_ready = 0;
   // Transfer the solution back out
   XAxiDma_SimpleTransfer(&dma_dev, (u32)&(output_vector[0]),
-          WIDTH*WIDTH*sizeof(int),XAXIDMA_DMA_TO_DEVICE);
-  while (XAxiDma_Busy(&dma_dev,XAXIDMA_DMA_TO_DEVICE));
+          WIDTH*WIDTH*sizeof(int),XAXIDMA_DEVICE_TO_DMA);
+  while (XAxiDma_Busy(&dma_dev,XAXIDMA_DEVICE_TO_DMA));
 
   Xil_DCacheFlush();
 
@@ -171,6 +215,201 @@ int fill_sudoku(int puzzle[WIDTH][WIDTH], int row, int col){
         return 0;
     }
     else return 1;
+}
+
+/*****************************************************************************/
+/**
+*
+* This function sets up RX channel of the DMA engine to be ready for packet
+* reception
+*
+* @param	AxiDmaInstPtr is the pointer to the instance of the DMA engine.
+*
+* @return	XST_SUCCESS if the setup is successful, XST_FAILURE otherwise.
+*
+* @note		None.
+*
+******************************************************************************/
+static int RxSetup(XAxiDma * AxiDmaInstPtr)
+{
+	XAxiDma_BdRing *RxRingPtr;
+	int Delay = 0;
+	int Coalesce = 1;
+	int Status;
+	XAxiDma_Bd BdTemplate;
+	XAxiDma_Bd *BdPtr;
+	XAxiDma_Bd *BdCurPtr;
+	u32 BdCount;
+	u32 FreeBdCount;
+	u32 RxBufferPtr;
+	int Index;
+
+	RxRingPtr = XAxiDma_GetRxRing(&dma_dev);
+
+	/* Disable all RX interrupts before RxBD space setup */
+
+	XAxiDma_BdRingIntDisable(RxRingPtr, XAXIDMA_IRQ_ALL_MASK);
+
+	/* Set delay and coalescing */
+	XAxiDma_BdRingSetCoalesce(RxRingPtr, Coalesce, Delay);
+
+	/* Setup Rx BD space */
+	BdCount = XAxiDma_BdRingCntCalc(XAXIDMA_BD_MINIMUM_ALIGNMENT,
+				RX_BD_SPACE_HIGH - RX_BD_SPACE_BASE + 1);
+
+	Status = XAxiDma_BdRingCreate(RxRingPtr, RX_BD_SPACE_BASE,
+				RX_BD_SPACE_BASE,
+				XAXIDMA_BD_MINIMUM_ALIGNMENT, BdCount);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("RX create BD ring failed %d\r\n", Status);
+
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Setup an all-zero BD as the template for the Rx channel.
+	 */
+	XAxiDma_BdClear(&BdTemplate);
+
+	Status = XAxiDma_BdRingClone(RxRingPtr, &BdTemplate);
+	if (Status != XST_SUCCESS) {
+		xil_printf("RX clone BD failed %d\r\n", Status);
+
+		return XST_FAILURE;
+	}
+
+	/* Attach buffers to RxBD ring so we are ready to receive packets */
+
+	FreeBdCount = XAxiDma_BdRingGetFreeCnt(RxRingPtr);
+
+	Status = XAxiDma_BdRingAlloc(RxRingPtr, FreeBdCount, &BdPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("RX alloc BD failed %d\r\n", Status);
+
+		return XST_FAILURE;
+	}
+
+	BdCurPtr = BdPtr;
+	RxBufferPtr = RX_BUFFER_BASE;
+	for (Index = 0; Index < FreeBdCount; Index++) {
+		Status = XAxiDma_BdSetBufAddr(BdCurPtr, RxBufferPtr);
+
+		if (Status != XST_SUCCESS) {
+			xil_printf("Set buffer addr %x on BD %x failed %d\r\n",
+			    (unsigned int)RxBufferPtr,
+			    (unsigned int)BdCurPtr, Status);
+
+			return XST_FAILURE;
+		}
+
+		Status = XAxiDma_BdSetLength(BdCurPtr, MAX_PKT_LEN,
+				RxRingPtr->MaxTransferLen);
+		if (Status != XST_SUCCESS) {
+			xil_printf("Rx set length %d on BD %x failed %d\r\n",
+			    MAX_PKT_LEN, (unsigned int)BdCurPtr, Status);
+
+			return XST_FAILURE;
+		}
+
+		/* Receive BDs do not need to set anything for the control
+		 * The hardware will set the SOF/EOF bits per stream status
+		 */
+		XAxiDma_BdSetCtrl(BdCurPtr, 0);
+		XAxiDma_BdSetId(BdCurPtr, RxBufferPtr);
+
+		RxBufferPtr += MAX_PKT_LEN;
+		BdCurPtr = XAxiDma_BdRingNext(RxRingPtr, BdCurPtr);
+	}
+
+	/* Clear the receive buffer, so we can verify data
+	 */
+	memset((void *)RX_BUFFER_BASE, 0, MAX_PKT_LEN);
+
+	Status = XAxiDma_BdRingToHw(RxRingPtr, FreeBdCount,
+						BdPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("RX submit hw failed %d\r\n", Status);
+
+		return XST_FAILURE;
+	}
+
+	/* Start RX DMA channel */
+	Status = XAxiDma_BdRingStart(RxRingPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("RX start hw failed %d\r\n", Status);
+
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
+}
+
+/*****************************************************************************/
+/**
+*
+* This function sets up the TX channel of a DMA engine to be ready for packet
+* transmission
+*
+* @param	AxiDmaInstPtr is the instance pointer to the DMA engine.
+*
+* @return	XST_SUCCESS if the setup is successful, XST_FAILURE otherwise.
+*
+* @note		None.
+*
+******************************************************************************/
+static int TxSetup(XAxiDma * AxiDmaInstPtr)
+{
+	XAxiDma_BdRing *TxRingPtr;
+	XAxiDma_Bd BdTemplate;
+	int Delay = 0;
+	int Coalesce = 1;
+	int Status;
+	u32 BdCount;
+
+	TxRingPtr = XAxiDma_GetTxRing(&dma_dev);
+
+	/* Disable all TX interrupts before TxBD space setup */
+
+	XAxiDma_BdRingIntDisable(TxRingPtr, XAXIDMA_IRQ_ALL_MASK);
+
+	/* Set TX delay and coalesce */
+	XAxiDma_BdRingSetCoalesce(TxRingPtr, Coalesce, Delay);
+
+	/* Setup TxBD space  */
+	BdCount = XAxiDma_BdRingCntCalc(XAXIDMA_BD_MINIMUM_ALIGNMENT,
+				TX_BD_SPACE_HIGH - TX_BD_SPACE_BASE + 1);
+
+	Status = XAxiDma_BdRingCreate(TxRingPtr, TX_BD_SPACE_BASE,
+				TX_BD_SPACE_BASE,
+				XAXIDMA_BD_MINIMUM_ALIGNMENT, BdCount);
+	if (Status != XST_SUCCESS) {
+		xil_printf("failed create BD ring in txsetup\r\n");
+
+		return XST_FAILURE;
+	}
+
+	/*
+	 * We create an all-zero BD as the template.
+	 */
+	XAxiDma_BdClear(&BdTemplate);
+
+	Status = XAxiDma_BdRingClone(TxRingPtr, &BdTemplate);
+	if (Status != XST_SUCCESS) {
+		xil_printf("failed bdring clone in txsetup %d\r\n", Status);
+
+		return XST_FAILURE;
+	}
+
+	/* Start the TX channel */
+	Status = XAxiDma_BdRingStart(TxRingPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("failed start bdring txsetup %d\r\n", Status);
+
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
 }
 
 void initialize(int &error){
